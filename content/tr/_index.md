@@ -1,3 +1,3 @@
 ---
-title: "Bunyan Home — Banyo ve Ev Armürleri B2B Tedarikçisi"
+title: "Bunyan Home — Banyo ve Ev Armatürleri B2B Tedarikçisi"
 ---

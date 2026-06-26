@@ -5,27 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-
-  <!-- hreflang tags -->
   {{ if .IsTranslated }}
   <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">
-  {{ range .Translations }}
-  <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+  {{ range .Translations }}<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">{{ end }}
   {{ end }}
-  {{ end }}
-
   <link rel="stylesheet" href="/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body class="lang-{{ .Language.Lang }} {{ if eq .Language.Lang "ar" }}rtl{{ end }}">
-  {{ partial "header.html" . }}
-
-  <main>
-    {{ block "main" . }}{{ end }}
-  </main>
-
-  {{ partial "footer.html" . }}
-  <script src="/js/main.js"></script>
+{{ partial "header.html" . }}
+<main>
+{{ block "main" . }}{{ end }}
+</main>
+{{ partial "footer.html" . }}
+<script src="/js/main.js"></script>
 </body>
 </html>

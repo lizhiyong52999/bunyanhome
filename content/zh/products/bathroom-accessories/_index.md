@@ -1,7 +1,6 @@
 ---
-title: "Bathroom Accessories"
-description: "Complete range of bathroom hardware including towel racks, robe hooks, paper holders, and complete 5-piece sets."
-type: "products"
-_build:
-  render: always
+title: "浴室五金配件"
+description: "304不锈钢浴室五金套装，多种高端表面处理。"
 ---
+
+304不锈钢浴室五金套装，多种高端表面处理。

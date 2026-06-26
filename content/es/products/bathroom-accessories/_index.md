@@ -1,7 +1,6 @@
 ---
-title: "Bathroom Accessories"
-description: "Complete range of bathroom hardware including towel racks, robe hooks, paper holders, and complete 5-piece sets."
-type: "products"
-_build:
-  render: always
+title: "Accesorios de Baño"
+description: "Juegos de accesorios de baño de acero inoxidable 304 con acabados premium."
 ---
+
+Juegos de accesorios de baño de acero inoxidable 304 con acabados premium.

@@ -1,0 +1,10 @@
+<div class="language-switcher">
+  <button class="lang-toggle" aria-label="Language">🌐 {{ .Language.LanguageName }} ▾</button>
+  <div class="lang-dropdown">
+    {{ range .Site.Languages }}
+    <a href="/{{ .Lang }}/" class="lang-option {{ if eq .Lang $.Language.Lang }}active{{ end }}">
+      {{ .LanguageName }}
+    </a>
+    {{ end }}
+  </div>
+</div>

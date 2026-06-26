@@ -1,0 +1,98 @@
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/{{ .Site.Params.company.whatsapp }}?text={{ .Site.Params.company.whatsapp_prefilled | urlquery }}" 
+   class="whatsapp-float" 
+   target="_blank" 
+   rel="noopener"
+   aria-label="{{ i18n "chat_on_whatsapp" }}">
+    <i class="fab fa-whatsapp"></i>
+    <span class="whatsapp-tooltip">{{ i18n "chat_on_whatsapp" }}</span>
+</a>
+
+<style>
+.whatsapp-float {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 60px;
+    height: 60px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 28px;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+    z-index: 1000;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+    color: #fff;
+}
+
+.whatsapp-float .whatsapp-tooltip {
+    position: absolute;
+    right: 70px;
+    background: #333;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover .whatsapp-tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+.whatsapp-float .whatsapp-tooltip::after {
+    content: '';
+    position: absolute;
+    right: -6px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 6px solid transparent;
+    border-left-color: #333;
+}
+
+/* RTL Support */
+[dir="rtl"] .whatsapp-float {
+    right: auto;
+    left: 24px;
+}
+
+[dir="rtl"] .whatsapp-float .whatsapp-tooltip {
+    right: auto;
+    left: 70px;
+}
+
+[dir="rtl"] .whatsapp-float .whatsapp-tooltip::after {
+    right: auto;
+    left: -6px;
+    border-left-color: transparent;
+    border-right-color: #333;
+}
+
+/* Animation */
+@keyframes whatsapp-pulse {
+    0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
+    70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+.whatsapp-float {
+    animation: whatsapp-pulse 2s infinite;
+}
+
+.whatsapp-float:hover {
+    animation: none;
+}
+</style>

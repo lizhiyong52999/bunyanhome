@@ -1,0 +1,96 @@
+<!-- Pricing Tiers for B2B -->
+<div class="pricing-tiers">
+    <h4>{{ i18n "price_range" }}</h4>
+    <table class="pricing-table">
+        <thead>
+            <tr>
+                <th>{{ i18n "pcs" }}</th>
+                <th>{{ i18n "price_range" }}</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{ with .Params.pricing }}
+            <tr>
+                <td>{{ i18n "price_1_49" }}</td>
+                <td class="price">{{ index . "1-49" }}</td>
+            </tr>
+            <tr>
+                <td>{{ i18n "price_50_199" }}</td>
+                <td class="price">{{ index . "50-199" }}</td>
+            </tr>
+            <tr class="highlight">
+                <td>{{ i18n "price_200_plus" }}</td>
+                <td class="price">{{ index . "200+" }}</td>
+            </tr>
+            {{ else }}
+            <tr>
+                <td>{{ i18n "price_1_49" }}</td>
+                <td class="price">Contact for price</td>
+            </tr>
+            <tr>
+                <td>{{ i18n "price_50_199" }}</td>
+                <td class="price">Contact for price</td>
+            </tr>
+            <tr class="highlight">
+                <td>{{ i18n "price_200_plus" }}</td>
+                <td class="price">Contact for price</td>
+            </tr>
+            {{ end }}
+        </tbody>
+    </table>
+    <p class="moq-note">{{ i18n "moq" }}: {{ .Site.Params.b2b.moq }} {{ i18n "pcs" }}</p>
+</div>
+
+<style>
+.pricing-tiers {
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.pricing-tiers h4 {
+    margin: 0 0 1rem;
+    font-size: 1rem;
+    color: #333;
+}
+
+.pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.pricing-table th,
+.pricing-table td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.pricing-table th {
+    background: #e9ecef;
+    font-weight: 600;
+}
+
+.pricing-table .highlight {
+    background: #fff3cd;
+}
+
+.pricing-table .price {
+    font-weight: 600;
+    color: #007bff;
+}
+
+.moq-note {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    color: #6c757d;
+}
+
+/* RTL Support */
+[dir="rtl"] .pricing-table th,
+[dir="rtl"] .pricing-table td {
+    text-align: right;
+}
+</style>

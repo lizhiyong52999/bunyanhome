@@ -1,0 +1,67 @@
+# Company Information
+
+company:
+  name: "Bunyan Home"
+  brand: "Bunyan Home"
+  tagline: "Bathroom & Home Fixtures — Factory Direct B2B Supplier"
+  
+  description:
+    en: "Bunyan Home is a professional B2B supplier specializing in high-quality bathroom and home fixtures. We offer factory-direct pricing, OEM/ODM customization, and global shipping to distributors, contractors, hotels, and property developers worldwide."
+    ar: "بونيان هوم هي مورد B2B متخصص في تركيبات الحمامات والمنزل عالية الجودة"
+    de: "Bunyan Home ist ein professioneller B2B-Lieferant für hochwertige Badezimmer- und Haushaltsarmaturen"
+    fr: "Bunyan Home est un fournisseur B2B professionnel spécialisé dans les équipements de salle de bain"
+    es: "Bunyan Home es un proveedor B2B profesional especializado en accesorios para baños"
+    ru: "Bunyan Home - профессиональный поставщик B2B, специализирующийся на сантехнике"
+    pt: "Bunyan Home é um fornecedor B2B profissional especializado em equipamentos para banheiro"
+    tr: "Bunyan Home, banyo ve ev aksesuarlarında uzmanlaşmış profesyonel bir B2B tedarikçisidir"
+    it: "Bunyan Home è un fornitore B2B professionale specializzato in accessori per bagno"
+    zh: "Bunyan Home是一家专业的B2B供应商，专业从事高品质浴室和家居五金"
+
+  contact:
+    email: "info@bunyanhome.com"
+    sales_email: "sales@bunyanhome.com"
+    phone: "+86 186 7693 2777"
+    whatsapp: "+8618676932777"
+    whatsapp_link: "https://wa.me/message/EFINVCDTCOR6I1"
+    address:
+      en: "Guangzhou, Guangdong, China"
+      ar: "غوانزو، غوانغدونغ، الصين"
+      de: "Guangzhou, Guangdong, China"
+      fr: "Guangzhou, Guangdong, China"
+      es: "Guangzhou, Guangdong, China"
+      ru: "Гуанчжоу, провинция Гуандун, Китай"
+      pt: "Guangzhou, Guangdong, China"
+      tr: "Guangzhou, Guangdong, China"
+      it: "Guangzhou, Guangdong, China"
+      zh: "中国广东省广州市"
+    timezone: "Asia/Shanghai (GMT+8)"
+
+  business_hours:
+    weekdays: "Mon-Fri: 9:00 AM - 6:00 PM (GMT+8)"
+    whatsapp: "24/7 Available"
+
+  established: 2018
+  
+  location: "Guangzhou, Guangdong, China"
+
+certifications:
+  - CE
+  - ISO9001
+  - SABER
+  - ESMA
+  - SASO
+
+b2b_terms:
+  moq: 50
+  sample_available: true
+  sample_lead_time: "7-10 days"
+  production_lead_time: "15-25 days"
+  payment_terms:
+    - "T/T 30% deposit, 70% before shipment"
+    - "L/C at sight"
+    - "PayPal (samples only)"
+  shipping:
+    - "FOB, CIF, DDP"
+    - "Express (DHL, FedEx, UPS)"
+    - "Sea freight"
+    - "Air freight"

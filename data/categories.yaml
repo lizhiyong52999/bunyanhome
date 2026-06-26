@@ -1,0 +1,36 @@
+categories:
+  - id: shattaf
+    name: "Bidet Sprayers & Shattaf"
+    icon: "🚿"
+    description: "Premium brass and 304 stainless steel bidet sprayers for Middle East market"
+    weight: 1
+
+  - id: bathroom-accessories
+    name: "Bathroom Accessories"
+    icon: "🛁"
+    description: "304 stainless steel bathroom hardware sets and accessories"
+    weight: 2
+
+  - id: kitchen-faucets
+    name: "Kitchen Faucets"
+    icon: "🚰"
+    description: "Pull-out and modern kitchen faucets in various finishes"
+    weight: 3
+
+  - id: shower-sets
+    name: "Thermostatic Shower Sets"
+    icon: "🚿"
+    description: "Anti-scald thermostatic shower systems with brass construction"
+    weight: 4
+
+  - id: led-mirrors
+    name: "LED Smart Mirrors"
+    icon: "🪞"
+    description: "Anti-fog LED bathroom mirrors with touch control"
+    weight: 5
+
+  - id: wall-panels
+    name: "PU Stone Wall Panels"
+    icon: "🧱"
+    description: "Lightweight polyurethane decorative wall panels"
+    weight: 6

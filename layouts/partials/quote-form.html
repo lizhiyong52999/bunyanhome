@@ -1,0 +1,47 @@
+<form class="quote-form" action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_KEY">
+  <input type="hidden" name="subject" value="New Inquiry from BunyanHome.com">
+
+  <div class="form-grid">
+    <div class="form-group">
+      <label for="name">{{ i18n "form_name" | default "Your Name" }} *</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="company">{{ i18n "form_company" | default "Company Name" }}</label>
+      <input type="text" id="company" name="company">
+    </div>
+    <div class="form-group">
+      <label for="email">{{ i18n "form_email" | default "Email" }} *</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="phone">{{ i18n "form_phone" | default "Phone / WhatsApp" }}</label>
+      <input type="tel" id="phone" name="phone">
+    </div>
+    <div class="form-group">
+      <label for="country">{{ i18n "form_country" | default "Country" }}</label>
+      <input type="text" id="country" name="country">
+    </div>
+    <div class="form-group">
+      <label for="product">{{ i18n "form_product" | default "Product Interest" }}</label>
+      <input type="text" id="product" name="product" value="{{ with .Title }}{{ . }}{{ end }}">
+    </div>
+    <div class="form-group">
+      <label for="quantity">{{ i18n "form_quantity" | default "Quantity Needed" }}</label>
+      <input type="text" id="quantity" name="quantity" placeholder="e.g. 200 pcs">
+    </div>
+    <div class="form-group">
+      <label for="destination">{{ i18n "form_destination" | default "Destination Port" }}</label>
+      <input type="text" id="destination" name="destination" placeholder="e.g. Jebel Ali, UAE">
+    </div>
+  </div>
+
+  <div class="form-group full-width">
+    <label for="message">{{ i18n "form_requirements" | default "Detailed Requirements" }}</label>
+    <textarea id="message" name="message" rows="4" placeholder="{{ i18n "form_requirements_placeholder" | default "Please describe your requirements: finish, packaging, customization, etc." }}"></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-primary btn-lg">{{ i18n "form_submit" | default "Send Inquiry" }}</button>
+  <p class="form-note">{{ i18n "form_response_time" | default "We will respond within 24 hours with a detailed quotation." }}</p>
+</form>

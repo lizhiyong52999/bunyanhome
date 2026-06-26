@@ -1,0 +1,71 @@
+[[main]]
+  identifier = "home"
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[main]]
+  identifier = "products"
+  name = "Products"
+  url = "/products/"
+  weight = 2
+
+[[main]]
+  identifier = "shattaf"
+  name = "Shattaf"
+  url = "/products/shattaf/"
+  parent = "products"
+  weight = 1
+
+[[main]]
+  identifier = "bathroom"
+  name = "Bathroom Accessories"
+  url = "/products/bathroom-accessories/"
+  parent = "products"
+  weight = 2
+
+[[main]]
+  identifier = "kitchen"
+  name = "Kitchen Faucets"
+  url = "/products/kitchen-faucets/"
+  parent = "products"
+  weight = 3
+
+[[main]]
+  identifier = "shower"
+  name = "Shower Sets"
+  url = "/products/shower-sets/"
+  parent = "products"
+  weight = 4
+
+[[main]]
+  identifier = "mirror"
+  name = "LED Mirrors"
+  url = "/products/led-mirrors/"
+  parent = "products"
+  weight = 5
+
+[[main]]
+  identifier = "panels"
+  name = "Wall Panels"
+  url = "/products/wall-panels/"
+  parent = "products"
+  weight = 6
+
+[[main]]
+  identifier = "oem"
+  name = "OEM/ODM"
+  url = "/oem-odm/"
+  weight = 3
+
+[[main]]
+  identifier = "about"
+  name = "About Us"
+  url = "/about/"
+  weight = 4
+
+[[main]]
+  identifier = "contact"
+  name = "Contact"
+  url = "/contact/"
+  weight = 5

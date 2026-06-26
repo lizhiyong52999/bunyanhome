@@ -1,0 +1,24 @@
+<header class="site-header">
+  <div class="container">
+    <div class="header-inner">
+      <a href="/{{ .Language.Lang }}/" class="logo">
+        <strong>BUNYAN</strong>HOME
+      </a>
+
+      <nav class="main-nav">
+        {{ range .Site.Menus.main }}
+          {{ if not .Parent }}
+          <a href="{{ .URL }}" class="nav-link">{{ .Name }}</a>
+          {{ end }}
+        {{ end }}
+      </nav>
+
+      <div class="header-actions">
+        {{ partial "language-switcher.html" . }}
+        <a href="/{{ .Language.Lang }}/contact/" class="btn btn-primary">{{ i18n "request_quote" | default "Request Quote" }}</a>
+      </div>
+
+      <button class="mobile-menu-toggle" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>

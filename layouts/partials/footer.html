@@ -1,0 +1,49 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>BUNYAN HOME</h4>
+        <p>{{ i18n "footer_tagline" | default "Your trusted B2B partner for bathroom & home fixtures. Factory direct, OEM/ODM welcome." }}</p>
+        <div class="cert-badges">
+          {{ range .Site.Params.certifications.list }}
+          <span class="cert-badge">{{ . }}</span>
+          {{ end }}
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>{{ i18n "products" | default "Products" }}</h4>
+        <ul>
+          <li><a href="/{{ $.Language.Lang }}/products/shattaf/">{{ i18n "cat_shattaf" | default "Bidet Sprayers" }}</a></li>
+          <li><a href="/{{ $.Language.Lang }}/products/bathroom-accessories/">{{ i18n "cat_bathroom" | default "Bathroom Accessories" }}</a></li>
+          <li><a href="/{{ $.Language.Lang }}/products/kitchen-faucets/">{{ i18n "cat_kitchen" | default "Kitchen Faucets" }}</a></li>
+          <li><a href="/{{ $.Language.Lang }}/products/shower-sets/">{{ i18n "cat_shower" | default "Shower Sets" }}</a></li>
+          <li><a href="/{{ $.Language.Lang }}/products/led-mirrors/">{{ i18n "cat_mirror" | default "LED Mirrors" }}</a></li>
+          <li><a href="/{{ $.Language.Lang }}/products/wall-panels/">{{ i18n "cat_panels" | default "Wall Panels" }}</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>{{ i18n "company" | default "Company" }}</h4>
+        <ul>
+          <li><a href="/{{ .Language.Lang }}/about/">{{ i18n "about_us" | default "About Us" }}</a></li>
+          <li><a href="/{{ .Language.Lang }}/oem-odm/">OEM/ODM</a></li>
+          <li><a href="/{{ .Language.Lang }}/contact/">{{ i18n "contact_us" | default "Contact Us" }}</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>{{ i18n "contact" | default "Contact" }}</h4>
+        <p>📧 {{ .Site.Params.email }}</p>
+        <p>📱 WhatsApp: {{ .Site.Params.whatsapp }}</p>
+        <p>📍 {{ .Site.Params.address }}</p>
+        <a href="{{ .Site.Params.whatsapp_link }}" class="btn btn-whatsapp" target="_blank">💬 {{ i18n "chat_whatsapp" | default "Chat on WhatsApp" }}</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; {{ now.Year }} Bunyan Home. All rights reserved.</p>
+      <p>{{ i18n "shipping_info" | default "FOB Guangzhou/Shenzhen | T/T 30% deposit | Lead time 15-30 days" }}</p>
+    </div>
+  </div>
+</footer>

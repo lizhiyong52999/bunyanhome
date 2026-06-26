@@ -1,0 +1,18 @@
+company_name = "Bunyan Home"
+tagline = "Bathroom & Home Fixtures — Factory Direct B2B Supplier"
+description = "Premium bathroom and kitchen hardware manufacturer. OEM/ODM services. Factory direct pricing for distributors, contractors, and project buyers."
+whatsapp = "+8618676932777"
+whatsapp_link = "https://wa.me/message/EFINVCDTCOR6I1"
+email = "sales@bunyanhome.com"
+address = "Guangzhou, Guangdong, China"
+moq_text = "MOQ from 50 pcs"
+warranty = "5 Years"
+response_time = "24 Hours"
+
+[certifications]
+  list = ["CE", "ISO9001", "SABER", "ESMA"]
+
+[shipping]
+  fob_port = "Guangzhou / Shenzhen"
+  lead_time = "15-30 days after order confirmation"
+  payment_terms = "T/T 30% deposit, 70% before shipment"

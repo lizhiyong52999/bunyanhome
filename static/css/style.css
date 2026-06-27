@@ -320,7 +320,8 @@ a:hover { color: var(--color-accent); }
   .mobile-menu-toggle { display: block; }
   .flag-bar { justify-content: center; gap: 6px; padding: 6px 16px; }
   .flag-bar a { font-size: 1.1rem; }
-  .lang-name { display: none; }
+  .lang-toggle .lang-name { display: none; }
+  .lang-dropdown .lang-name { display: inline; }
   .lang-toggle { padding: 5px 8px; }
   .hero h1 { font-size: 1.8rem; }
   .hero-actions { flex-direction: column; align-items: center; }

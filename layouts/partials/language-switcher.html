@@ -1,9 +1,14 @@
-<div class="language-switcher">
-  <button class="lang-toggle" aria-label="Language">🌐 {{ .Language.LanguageName }} ▾</button>
+<div class="lang-switcher">
+  <button class="lang-toggle" aria-label="Switch language">
+    <span class="lang-flag">{{ index $.Site.Params.langFlags $.Language.Lang }}</span>
+    <span class="lang-name">{{ .Language.LanguageName }}</span>
+    <svg class="lang-chevron" width="12" height="12" viewBox="0 0 12 12"><path d="M3 5l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+  </button>
   <div class="lang-dropdown">
     {{ range .Site.Languages }}
-    <a href="/{{ .Lang }}/" class="lang-option {{ if eq .Lang $.Language.Lang }}active{{ end }}">
-      {{ .LanguageName }}
+    <a href="/{{ .Lang }}/" class="lang-item {{ if eq .Lang $.Language.Lang }}active{{ end }}">
+      <span class="lang-flag">{{ index $.Site.Params.langFlags .Lang }}</span>
+      <span class="lang-name">{{ .LanguageName }}</span>
     </a>
     {{ end }}
   </div>

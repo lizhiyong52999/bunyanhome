@@ -51,8 +51,33 @@ a:hover { color: var(--color-accent); }
   display: flex; align-items: center; justify-content: space-between;
   padding: 16px 24px; max-width: var(--container-max); margin: 0 auto;
 }
-.logo { font-size: 1.4rem; color: var(--color-primary); letter-spacing: 1px; }
-.logo strong { font-weight: 700; }
+.logo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  letter-spacing: 2px;
+  text-decoration: none;
+  display: flex;
+  align-items: baseline;
+  gap: 0;
+  line-height: 1;
+}
+.logo-bunyan {
+  font-weight: 800;
+  color: var(--color-primary);
+  letter-spacing: 3px;
+}
+.logo-dot {
+  font-weight: 300;
+  color: var(--color-accent);
+  margin: 0 2px;
+  font-size: 1.6rem;
+}
+.logo-home {
+  font-weight: 300;
+  color: var(--color-primary);
+  letter-spacing: 4px;
+}
 
 .main-nav { display: flex; gap: 24px; }
 .nav-link {

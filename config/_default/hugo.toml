@@ -11,3 +11,4 @@ disableHugoGeneratorInject = true
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+parallelism = 1

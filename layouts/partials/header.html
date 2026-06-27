@@ -1,4 +1,13 @@
 <header class="site-header">
+  {{/* ===== Top Flag Bar (helenbo-style) ===== */}}
+  <div class="flag-bar">
+    {{ range .Site.Languages }}
+    <a href="/{{ .Lang }}/" title="{{ .LanguageName }}" class="{{ if eq .Lang $.Language.Lang }}active{{ end }}" dir="{{ if .Params.direction }}{{ .Params.direction }}{{ else }}ltr{{ end }}">
+      {{ index $.Site.Params.langFlags .Lang }}
+    </a>
+    {{ end }}
+  </div>
+
   <div class="container">
     <div class="header-inner">
       <a href="/{{ .Language.Lang }}/" class="logo">

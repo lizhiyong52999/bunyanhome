@@ -4,6 +4,8 @@
   --navy: #1a2a3a;
   --gold: #c8a45c;
   --light-gold: #e8d5a3;
+  --light-yellow: #FFF9E6;
+  --light-yellow-2: #FFF3D0;
   --gray-50: #f8f9fa;
   --gray-100: #f0f1f3;
   --gray-200: #e2e4e7;
@@ -12,6 +14,7 @@
   --font: 'Segoe UI', system-ui, -apple-system, sans-serif;
   --font-ar: 'Segoe UI', 'Arial', sans-serif;
   --max-width: 1280px;
+  --wide-width: 1600px;
   --radius: 8px;
 }
 
@@ -20,7 +23,7 @@
 body {
   font-family: var(--font);
   color: var(--gray-800);
-  background: var(--white);
+  background: var(--light-yellow);
   line-height: 1.6;
 }
 
@@ -39,12 +42,12 @@ body {
   background: var(--navy);
   color: var(--white);
   font-size: 13px;
-  padding: 8px 0;
+  padding: 10px 0;
 }
 .top-bar .container {
-  max-width: var(--max-width);
+  max-width: var(--wide-width);
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -127,15 +130,16 @@ body {
   position: sticky;
   top: 0;
   z-index: 999;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 .header .container {
-  max-width: var(--max-width);
+  max-width: var(--wide-width);
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
+  height: 72px;
 }
 .logo {
   font-size: 24px;
@@ -226,7 +230,7 @@ body {
 .section {
   padding: 80px 0;
 }
-.section-gray { background: var(--gray-50); }
+.section-gray { background: var(--light-yellow-2); }
 .section .container {
   max-width: var(--max-width);
   margin: 0 auto;
@@ -436,7 +440,7 @@ body {
 
 /* Page Header */
 .page-header {
-  background: var(--gray-50);
+  background: var(--light-yellow-2);
   padding: 48px 0;
   text-align: center;
 }
@@ -523,7 +527,7 @@ body {
     display: flex; 
     flex-direction: column; 
     position: absolute; 
-    top: 70px; 
+    top: 72px; 
     left: 0; 
     right: 0; 
     background: var(--white); 

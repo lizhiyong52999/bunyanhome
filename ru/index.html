@@ -1,1 +1,430 @@
-PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9InJ1IiA+CjxoZWFkPgogIDxtZXRhIGNoYXJzZXQ9IlVURi04Ij4KICA8bWV0YSBuYW1lPSJ2aWV3cG9ydCIgY29udGVudD0id2lkdGg9ZGV2aWNlLXdpZHRoLCBpbml0aWFsLXNjYWxlPTEuMCI+CiAgPHRpdGxlPkJ1bnlhbiBIb21lPC90aXRsZT4KICA8bWV0YSBuYW1lPSJkZXNjcmlwdGlvbiIgY29udGVudD0iUHJlbWl1bSBiYXRocm9vbSBhbmQga2l0Y2hlbiBoYXJkd2FyZSBtYW51ZmFjdHVyZXIuIE9FTS9PRE0gc2VydmljZXMuIEZhY3RvcnkgZGlyZWN0IHByaWNpbmcgZm9yIGRpc3RyaWJ1dG9ycywgY29udHJhY3RvcnMsIGFuZCBwcm9qZWN0IGJ1eWVycy4iPgogIAogIDxsaW5rIHJlbD0iYWx0ZXJuYXRlIiBocmVmbGFuZz0ieC1kZWZhdWx0IiBocmVmPSJodHRwczovL2J1bnlhbmhvbWUuY29tL3J1LyI+CiAgPGxpbmsgcmVsPSJhbHRlcm5hdGUiIGhyZWZsYW5nPSJlbiIgaHJlZj0iaHR0cHM6Ly9idW55YW5ob21lLmNvbS8iPjxsaW5rIHJlbD0iYWx0ZXJuYXRlIiBocmVmbGFuZz0iYXIiIGhyZWY9Imh0dHBzOi8vYnVueWFuaG9tZS5jb20vYXIvIj48bGluayByZWw9ImFsdGVybmF0ZSIgaHJlZmxhbmc9ImRlIiBocmVmPSJodHRwczovL2J1bnlhbmhvbWUuY29tL2RlLyI+PGxpbmsgcmVsPSJhbHRlcm5hdGUiIGhyZWZsYW5nPSJmciIgaHJlZj0iaHR0cHM6Ly9idW55YW5ob21lLmNvbS9mci8iPjxsaW5rIHJlbD0iYWx0ZXJuYXRlIiBocmVmbGFuZz0iZXMiIGhyZWY9Imh0dHBzOi8vYnVueWFuaG9tZS5jb20vZXMvIj48bGluayByZWw9ImFsdGVybmF0ZSIgaHJlZmxhbmc9InB0IiBocmVmPSJodHRwczovL2J1bnlhbmhvbWUuY29tL3B0LyI+PGxpbmsgcmVsPSJhbHRlcm5hdGUiIGhyZWZsYW5nPSJ0ciIgaHJlZj0iaHR0cHM6Ly9idW55YW5ob21lLmNvbS90ci8iPjxsaW5rIHJlbD0iYWx0ZXJuYXRlIiBocmVmbGFuZz0iaXQiIGhyZWY9Imh0dHBzOi8vYnVueWFuaG9tZS5jb20vaXQvIj48bGluayByZWw9ImFsdGVybmF0ZSIgaHJlZmxhbmc9InpoIiBocmVmPSJodHRwczovL2J1bnlhbmhvbWUuY29tL3poLyI+CiAgCiAgPGxpbmsgcmVsPSJzdHlsZXNoZWV0IiBocmVmPSIvY3NzL3N0eWxlLmNzcz92PTIwMjYwNzAzIj4KICA8bGluayByZWw9InByZWNvbm5lY3QiIGhyZWY9Imh0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20iPgogIDxsaW5rIGhyZWY9Imh0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzMj9mYW1pbHk9SW50ZXI6d2dodEA0MDA7NTAwOzYwMDs3MDAmZmFtaWx5PU5vdG8rU2FucytBcmFiaWM6d2dodEA0MDA7NTAwOzYwMDs3MDAmZGlzcGxheT1zd2FwIiByZWw9InN0eWxlc2hlZXQiPgo8L2hlYWQ+Cjxib2R5IGNsYXNzPSJsYW5nLXJ1ICI+CjxoZWFkZXIgY2xhc3M9InNpdGUtaGVhZGVyIj4KICAKICA8ZGl2IGNsYXNzPSJ0b3AtYmFyIj4KICAgIDxkaXYgY2xhc3M9ImNvbnRhaW5lciI+CiAgICAgIDxkaXYgY2xhc3M9InRvcC1iYXItaW5uZXIiPgogICAgICAgIDxhIGhyZWY9Im1haWx0bzppbmZvQGJ1bnlhbmhvbWUuY29tIiBjbGFzcz0idG9wLWJhci1pdGVtIj5FLW1haWw6IGluZm9AYnVueWFuaG9tZS5jb208L2E+CiAgICAgICAgPGEgaHJlZj0idGVsOis4NjE4Njc2OTMyNzc3IiBjbGFzcz0idG9wLWJhci1pdGVtIGNlbnRlci1pdGVtIj5UZWw6ICs4NjE4Njc2OTMyNzc3PC9hPgogICAgICAgIDxkaXYgY2xhc3M9InRvcC1iYXItZmxhZ3MiPgogICAgICAgICAgCiAgICAgICAgICAKICAgICAgICAgIDxhIGhyZWY9Ii9lbi8iIHRpdGxlPSJFbmdsaXNoIiBjbGFzcz0iIj4KICAgICAgICAgICAgPGltZyBzcmM9Imh0dHBzOi8vZmxhZ2Nkbi5jb20vMTZ4MTIvZ2IucG5nIiB3aWR0aD0iMTYiIGhlaWdodD0iMTIiIGFsdD0iRW5nbGlzaCIgbG9hZGluZz0ibGF6eSIgLz4KICAgICAgICAgIDwvYT4KICAgICAgICAgIAogICAgICAgICAgCiAgICAgICAgICA8YSBocmVmPSIvYXIvIiB0aXRsZT0i2KfZhNi52LHYqNmK2KkiIGNsYXNzPSIiPgogICAgICAgICAgICA8aW1nIHNyYz0iaHR0cHM6Ly9mbGFnY2RuLmNvbS8xNngxMi9zYS5wbmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxMiIgYWx0PSLYp9mE2LnYsdio2YrYqSIgbG9hZGluZz0ibGF6eSIgLz4KICAgICAgICAgIDwvYT4KICAgICAgICAgIAogICAgICAgICAgCiAgICAgICAgICA8YSBocmVmPSIvZGUvIiB0aXRsZT0iRGV1dHNjaCIgY2xhc3M9IiI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2ZsYWdjZG4uY29tLzE2eDEyL2RlLnBuZyIgd2lkdGg9IjE2IiBoZWlnaHQ9IjEyIiBhbHQ9IkRldXRzY2giIGxvYWRpbmc9ImxhenkiIC8+CiAgICAgICAgICA8L2E+CiAgICAgICAgICAKICAgICAgICAgIAogICAgICAgICAgPGEgaHJlZj0iL2ZyLyIgdGl0bGU9IkZyYW7Dp2FpcyIgY2xhc3M9IiI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2ZsYWdjZG4uY29tLzE2eDEyL2ZyLnBuZyIgd2lkdGg9IjE2IiBoZWlnaHQ9IjEyIiBhbHQ9IkZyYW7Dp2FpcyIgbG9hZGluZz0ibGF6eSIgLz4KICAgICAgICAgIDwvYT4KICAgICAgICAgIAogICAgICAgICAgCiAgICAgICAgICA8YSBocmVmPSIvZXMvIiB0aXRsZT0iRXNwYcOxb2wiIGNsYXNzPSIiPgogICAgICAgICAgICA8aW1nIHNyYz0iaHR0cHM6Ly9mbGFnY2RuLmNvbS8xNngxMi9lcy5wbmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxMiIgYWx0PSJFc3Bhw7FvbCIgbG9hZGluZz0ibGF6eSIgLz4KICAgICAgICAgIDwvYT4KICAgICAgICAgIAogICAgICAgICAgCiAgICAgICAgICA8YSBocmVmPSIvcnUvIiB0aXRsZT0i0KDRg9GB0YHQutC40LkiIGNsYXNzPSJhY3RpdmUiPgogICAgICAgICAgICA8aW1nIHNyYz0iaHR0cHM6Ly9mbGFnY2RuLmNvbS8xNngxMi9ydS5wbmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxMiIgYWx0PSLQoNGD0YHRgdC60LjQuSIgbG9hZGluZz0ibGF6eSIgLz4KICAgICAgICAgIDwvYT4KICAgICAgICAgIAogICAgICAgICAgCiAgICAgICAgICA8YSBocmVmPSIvcHQvIiB0aXRsZT0iUG9ydHVndcOqcyIgY2xhc3M9IiI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2ZsYWdjZG4uY29tLzE2eDEyL2JyLnBuZyIgd2lkdGg9IjE2IiBoZWlnaHQ9IjEyIiBhbHQ9IlBvcnR1Z3XDqnMiIGxvYWRpbmc9ImxhenkiIC8+CiAgICAgICAgICA8L2E+CiAgICAgICAgICAKICAgICAgICAgIAogICAgICAgICAgPGEgaHJlZj0iL3RyLyIgdGl0bGU9IlTDvHJrw6dlIiBjbGFzcz0iIj4KICAgICAgICAgICAgPGltZyBzcmM9Imh0dHBzOi8vZmxhZ2Nkbi5jb20vMTZ4MTIvdHIucG5nIiB3aWR0aD0iMTYiIGhlaWdodD0iMTIiIGFsdD0iVMO8cmvDp2UiIGxvYWRpbmc9ImxhenkiIC8+CiAgICAgICAgICA8L2E+CiAgICAgICAgICAKICAgICAgICAgIAogICAgICAgICAgPGEgaHJlZj0iL2l0LyIgdGl0bGU9Ikl0YWxpYW5vIiBjbGFzcz0iIj4KICAgICAgICAgICAgPGltZyBzcmM9Imh0dHBzOi8vZmxhZ2Nkbi5jb20vMTZ4MTIvaXQucG5nIiB3aWR0aD0iMTYiIGhlaWdodD0iMTIiIGFsdD0iSXRhbGlhbm8iIGxvYWRpbmc9ImxhenkiIC8+CiAgICAgICAgICA8L2E+CiAgICAgICAgICAKICAgICAgICAgIAogICAgICAgICAgPGEgaHJlZj0iL3poLyIgdGl0bGU9IuS4reaWhyIgY2xhc3M9IiI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2ZsYWdjZG4uY29tLzE2eDEyL2NuLnBuZyIgd2lkdGg9IjE2IiBoZWlnaHQ9IjEyIiBhbHQ9IuS4reaWhyIgbG9hZGluZz0ibGF6eSIgLz4KICAgICAgICAgIDwvYT4KICAgICAgICAgIAogICAgICAgIDwvZGl2PgogICAgICA8L2Rpdj4KICAgIDwvZGl2PgogIDwvZGl2PgoKICAKICA8ZGl2IGNsYXNzPSJjb250YWluZXIiPgogICAgPGRpdiBjbGFzcz0iaGVhZGVyLWlubmVyIj4KICAgICAgPGEgaHJlZj0iL3J1LyIgY2xhc3M9ImxvZ28iPgogICAgICAgIDxzcGFuIGNsYXNzPSJsb2dvLWJ1bnlhbiI+QlVOWUFOPC9zcGFuPjxzcGFuIGNsYXNzPSJsb2dvLWRvdCI+wrc8L3NwYW4+PHNwYW4gY2xhc3M9ImxvZ28taG9tZSI+SE9NRTwvc3Bhbj4KICAgICAgPC9hPgoKICAgICAgPG5hdiBjbGFzcz0ibWFpbi1uYXYiPgogICAgICAgIAogICAgICAgIAogICAgICAgICAgCiAgICAgICAgCiAgICAgICAgICAKICAgICAgICAKICAgICAgICAgIAogICAgICAgIAogICAgICAgICAgCiAgICAgICAgCiAgICAgICAgICAKICAgICAgICAKICAgICAgICAKICAgICAgICAgIAogICAgICAgICAgPGEgaHJlZj0iLyIgY2xhc3M9Im5hdi1saW5rIj4KICAgICAgICAgICAgSG9tZQogICAgICAgICAgICAKICAgICAgICAgIDwvYT4KICAgICAgICAKICAgICAgICAgIDxzcGFuIGNsYXNzPSJuYXYtc2VwYXJhdG9yIj48L3NwYW4+CiAgICAgICAgICA8YSBocmVmPSIvcHJvZHVjdHMvIiBjbGFzcz0ibmF2LWxpbmsiPgogICAgICAgICAgICBQcm9kdWN0cwogICAgICAgICAgICA8c3BhbiBjbGFzcz0ibmF2LWFycm93Ij7ilrw8L3NwYW4+CiAgICAgICAgICA8L2E+CiAgICAgICAgCiAgICAgICAgICA8c3BhbiBjbGFzcz0ibmF2LXNlcGFyYXRvciI+PC9zcGFuPgogICAgICAgICAgPGEgaHJlZj0iL29lbS1vZG0vIiBjbGFzcz0ibmF2LWxpbmsiPgogICAgICAgICAgICBPRU0vT0RNCiAgICAgICAgICAgIAogICAgICAgICAgPC9hPgogICAgICAgIAogICAgICAgICAgPHNwYW4gY2xhc3M9Im5hdi1zZXBhcmF0b3IiPjwvc3Bhbj4KICAgICAgICAgIDxhIGhyZWY9Ii9hYm91dC8iIGNsYXNzPSJuYXYtbGluayI+CiAgICAgICAgICAgIEFib3V0IFVzCiAgICAgICAgICAgIAogICAgICAgICAgPC9hPgogICAgICAgIAogICAgICAgICAgPHNwYW4gY2xhc3M9Im5hdi1zZXBhcmF0b3IiPjwvc3Bhbj4KICAgICAgICAgIDxhIGhyZWY9Ii9jb250YWN0LyIgY2xhc3M9Im5hdi1saW5rIj4KICAgICAgICAgICAgQ29udGFjdAogICAgICAgICAgICAKICAgICAgICAgIDwvYT4KICAgICAgICAKICAgICAgPC9uYXY+CgogICAgICA8ZGl2IGNsYXNzPSJoZWFkZXItYWN0aW9ucyI+CiAgICAgICAgPGRpdiBjbGFzcz0ibGFuZy1zd2l0Y2hlciIgaWQ9ImxhbmdTd2l0Y2hlciI+CiAgPGJ1dHRvbiBjbGFzcz0ibGFuZy10b2dnbGUiIGlkPSJsYW5nVG9nZ2xlIiBhcmlhLWxhYmVsPSJTd2l0Y2ggbGFuZ3VhZ2UiIG9uY2xpY2s9InRvZ2dsZUxhbmdEcm9wZG93bigpIj4KICAgIDxpbWcgc3JjPSJodHRwczovL2ZsYWdjZG4uY29tLzE2eDEyL3J1LnBuZyIgd2lkdGg9IjE2IiBoZWlnaHQ9IjEyIiBhbHQ9ItCg0YPRgdGB0LrQuNC5IiBjbGFzcz0ibGFuZy1mbGFnLWltZyIgLz4KICAgIDxzcGFuIGNsYXNzPSJsYW5nLW5hbWUiPtCg0YPRgdGB0LrQuNC5PC9zcGFuPgogICAgPHN2ZyBjbGFzcz0ibGFuZy1jaGV2cm9uIiB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiI+PHBhdGggZD0iTTMgNWwzIDMgMy0zIiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjwvc3ZnPgogIDwvYnV0dG9uPgogIDxkaXYgY2xhc3M9ImxhbmctZHJvcGRvd24iIGlkPSJsYW5nRHJvcGRvd24iPgogICAgCiAgICAKICAgIDxkaXYgY2xhc3M9ImxhbmctZHJvcGRvd24tY29scyI+CiAgICAgIDxkaXYgY2xhc3M9ImxhbmctZHJvcGRvd24tY29sIj4KICAgICAgICAKICAgICAgICA8YSBocmVmPSIvZW4vIiBjbGFzcz0ibGFuZy1pdGVtICI+CiAgICAgICAgICA8aW1nIHNyYz0iaHR0cHM6Ly9mbGFnY2RuLmNvbS8xNngxMi9nYi5wbmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxMiIgYWx0PSJFbmdsaXNoIiBjbGFzcz0ibGFuZy1mbGFnLWltZyIgLz4KICAgICAgICAgIDxzcGFuIGNsYXNzPSJsYW5nLW5hbWUiPkVuZ2xpc2g8L3NwYW4+CiAgICAgICAgPC9hPgogICAgICAgIAogICAgICAgIDxhIGhyZWY9Ii9hci8iIGNsYXNzPSJsYW5nLWl0ZW0gIj4KICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2ZsYWdjZG4uY29tLzE2eDEyL3NhLnBuZyIgd2lkdGg9IjE2IiBoZWlnaHQ9IjEyIiBhbHQ9Itin2YTYudix2KjZitipIiBjbGFzcz0ibGFuZy1mbGFnLWltZyIgLz4KICAgICAgICAgIDxzcGFuIGNsYXNzPSJsYW5nLW5hbWUiPtin2YTYudix2KjZitipPC9zcGFuPgogICAgICAgIDwvYT4KICAgICAgICAKICAgICAgICA8YSBocmVmPSIvZGUvIiBjbGFzcz0ibGFuZy1pdGVtICI+CiAgICAgICAgICA8aW1nIHNyYz0iaHR0cHM6Ly9mbGFnY2RuLmNvbS8xNngxMi9kZS5wbmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxMiIgYWx0PSJEZXV0c2NoIiBjbGFzcz0ibGFuZy1mbGFnLWltZyIgLz4KICAgICAgICAgIDxzcGFuIGNsYXNzPSJsYW5nLW5hbWUiPkRldXRzY2g8L3NwYW4+CiAgICAgICAgPC9hPgogICAgICAgIAogICAgICAgIDxhIGhyZWY9Ii9mci8iIGNsYXNzPSJsYW5nLWl0ZW0gIj4KICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2ZsYWdjZG4uY29tLzE2eDEyL2ZyLnBuZyIgd2lkdGg9IjE2IiBoZWlnaHQ9IjEyIiBhbHQ9IkZyYW7Dp2FpcyIgY2xhc3M9ImxhbmctZmxhZy1pbWciIC8+CiAgICAgICAgICA8c3BhbiBjbGFzcz0ibGFuZy1uYW1lIj5GcmFuw6dhaXM8L3NwYW4+CiAgICAgICAgPC9hPgogICAgICAgIAogICAgICAgIDxhIGhyZWY9Ii9lcy8iIGNsYXNzPSJsYW5nLWl0ZW0gIj4KICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2ZsYWdjZG4uY29tLzE2eDEyL2VzLnBuZyIgd2lkdGg9IjE2IiBoZWlnaHQ9IjEyIiBhbHQ9IkVzcGHDsW9sIiBjbGFzcz0ibGFuZy1mbGFnLWltZyIgLz4KICAgICAgICAgIDxzcGFuIGNsYXNzPSJsYW5nLW5hbWUiPkVzcGHDsW9sPC9zcGFuPgogICAgICAgIDwvYT4KICAgICAgICAKICAgICAgPC9kaXY+CiAgICAgIDxkaXYgY2xhc3M9ImxhbmctZHJvcGRvd24tY29sIj4KICAgICAgICAKICAgICAgICA8YSBocmVmPSIvcnUvIiBjbGFzcz0ibGFuZy1pdGVtIGFjdGl2ZSI+CiAgICAgICAgICA8aW1nIHNyYz0iaHR0cHM6Ly9mbGFnY2RuLmNvbS8xNngxMi9ydS5wbmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxMiIgYWx0PSLQoNGD0YHRgdC60LjQuSIgY2xhc3M9ImxhbmctZmxhZy1pbWciIC8+CiAgICAgICAgICA8c3BhbiBjbGFzcz0ibGFuZy1uYW1lIj7QoNGD0YHRgdC60LjQuTwvc3Bhbj4KICAgICAgICA8L2E+CiAgICAgICAgCiAgICAgICAgPGEgaHJlZj0iL3B0LyIgY2xhc3M9ImxhbmctaXRlbSAiPgogICAgICAgICAgPGltZyBzcmM9Imh0dHBzOi8vZmxhZ2Nkbi5jb20vMTZ4MTIvYnIucG5nIiB3aWR0aD0iMTYiIGhlaWdodD0iMTIiIGFsdD0iUG9ydHVndcOqcyIgY2xhc3M9ImxhbmctZmxhZy1pbWciIC8+CiAgICAgICAgICA8c3BhbiBjbGFzcz0ibGFuZy1uYW1lIj5Qb3J0dWd1w6pzPC9zcGFuPgogICAgICAgIDwvYT4KICAgICAgICAKICAgICAgICA8YSBocmVmPSIvdHIvIiBjbGFzcz0ibGFuZy1pdGVtICI+CiAgICAgICAgICA8aW1nIHNyYz0iaHR0cHM6Ly9mbGFnY2RuLmNvbS8xNngxMi90ci5wbmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxMiIgYWx0PSJUw7xya8OnZSIgY2xhc3M9ImxhbmctZmxhZy1pbWciIC8+CiAgICAgICAgICA8c3BhbiBjbGFzcz0ibGFuZy1uYW1lIj5Uw7xya8OnZTwvc3Bhbj4KICAgICAgICA8L2E+CiAgICAgICAgCiAgICAgICAgPGEgaHJlZj0iL2l0LyIgY2xhc3M9ImxhbmctaXRlbSAiPgogICAgICAgICAgPGltZyBzcmM9Imh0dHBzOi8vZmxhZ2Nkbi5jb20vMTZ4MTIvaXQucG5nIiB3aWR0aD0iMTYiIGhlaWdodD0iMTIiIGFsdD0iSXRhbGlhbm8iIGNsYXNzPSJsYW5nLWZsYWctaW1nIiAvPgogICAgICAgICAgPHNwYW4gY2xhc3M9ImxhbmctbmFtZSI+SXRhbGlhbm88L3NwYW4+CiAgICAgICAgPC9hPgogICAgICAgIAogICAgICAgIDxhIGhyZWY9Ii96aC8iIGNsYXNzPSJsYW5nLWl0ZW0gIj4KICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2ZsYWdjZG4uY29tLzE2eDEyL2NuLnBuZyIgd2lkdGg9IjE2IiBoZWlnaHQ9IjEyIiBhbHQ9IuS4reaWhyIgY2xhc3M9ImxhbmctZmxhZy1pbWciIC8+CiAgICAgICAgICA8c3BhbiBjbGFzcz0ibGFuZy1uYW1lIj7kuK3mloc8L3NwYW4+CiAgICAgICAgPC9hPgogICAgICAgIAogICAgICA8L2Rpdj4KICAgIDwvZGl2PgogIDwvZGl2Pgo8L2Rpdj4KCiAgICAgICAgPGRpdiBjbGFzcz0iaGVhZGVyLXNlYXJjaCI+CiAgICAgICAgICA8aW5wdXQgdHlwZT0idGV4dCIgY2xhc3M9InNlYXJjaC1pbnB1dCIgcGxhY2Vob2xkZXI9IlNlYXJjaC4uLiIgaWQ9ImhlYWRlclNlYXJjaCIgLz4KICAgICAgICAgIDxidXR0b24gY2xhc3M9InNlYXJjaC1idG4iIGFyaWEtbGFiZWw9IlNlYXJjaCI+8J+UjTwvYnV0dG9uPgogICAgICAgIDwvZGl2PgogICAgICA8L2Rpdj4KCiAgICAgIDxidXR0b24gY2xhc3M9Im1vYmlsZS1tZW51LXRvZ2dsZSIgYXJpYS1sYWJlbD0iTWVudSI+4piwPC9idXR0b24+CiAgICA8L2Rpdj4KICA8L2Rpdj4KPC9oZWFkZXI+Cgo8c2NyaXB0IGRhdGEtY2Zhc3luYz0iZmFsc2UiIHNyYz0iL2Nkbi1jZ2kvc2NyaXB0cy81YzVkZDcyOC9jbG91ZGZsYXJlLXN0YXRpYy9lbWFpbC1kZWNvZGUubWluLmpzIj48L3NjcmlwdD48c2NyaXB0PgpmdW5jdGlvbiB0b2dnbGVMYW5nRHJvcGRvd24oKSB7CiAgdmFyIHMgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnbGFuZ1N3aXRjaGVyJyk7CiAgcy5jbGFzc0xpc3QudG9nZ2xlKCdvcGVuJyk7Cn0KZG9jdW1lbnQuYWRkRXZlbnRMaXN0ZW5lcignY2xpY2snLCBmdW5jdGlvbihlKSB7CiAgdmFyIHMgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnbGFuZ1N3aXRjaGVyJyk7CiAgaWYgKHMgJiYgIXMuY29udGFpbnMoZS50YXJnZXQpKSB7CiAgICBzLmNsYXNzTGlzdC5yZW1vdmUoJ29wZW4nKTsKICB9Cn0pOwo8L3NjcmlwdD4KPG1haW4+CgoKCjxzZWN0aW9uIGNsYXNzPSJoZXJvIj4KICA8ZGl2IGNsYXNzPSJjb250YWluZXIiPgogICAgPGRpdiBjbGFzcz0iaGVyby1jb250ZW50Ij4KICAgICAgPGgxPtCh0LDQvdGC0LXRhdC90LjQutCwINC00LvRjyDQstCw0L3QvdC+0Lkg0Lgg0LTQvtC80LAg0L3QsNC/0YDRj9C80YPRjiDRgSDQt9Cw0LLQvtC00LA8L2gxPgogICAgICA8cCBjbGFzcz0iaGVyby1zdWJ0aXRsZSI+0J/RgNC10LzQuNCw0LvRjNC90LDRjyDQv9GA0L7QtNGD0LrRhtC40Y8g0LjQtyDQu9Cw0YLRg9C90Lgg0Lgg0L3QtdGA0LbQsNCy0LXRjtGJ0LXQuSDRgdGC0LDQu9C4IDMwNCDQtNC70Y8g0LTQuNGB0YLRgNC40LHRjNGO0YLQvtGA0L7Qsiwg0L/QvtC00YDRj9C00YfQuNC60L7QsiDQuCDQt9Cw0LrRg9C/0YnQuNC60L7QsiDQv9GA0L7QtdC60YLQvtCyLiBPRU0vT0RNINC/0YDQuNCy0LXRgtGB0YLQstGD0Y7RgtGB0Y8uPC9wPgogICAgICA8ZGl2IGNsYXNzPSJoZXJvLWFjdGlvbnMiPgogICAgICAgIDxhIGhyZWY9Ii9ydS9wcm9kdWN0cy8iIGNsYXNzPSJidG4gYnRuLXByaW1hcnkgYnRuLWxnIj7QodC80L7RgtGA0LXRgtGMINC/0YDQvtC00YPQutGG0LjRjjwvYT4KICAgICAgICA8YSBocmVmPSIvcnUvY29udGFjdC8iIGNsYXNzPSJidG4gYnRuLW91dGxpbmUgYnRuLWxnIj7Qn9C+0LvRg9GH0LjRgtGMINC/0YDQtdC00LvQvtC20LXQvdC40LU8L2E+CiAgICAgIDwvZGl2PgogICAgICA8ZGl2IGNsYXNzPSJoZXJvLWJhZGdlcyI+CiAgICAgICAgPHNwYW4+TU9RINC+0YIgNTAg0YjRgi48L3NwYW4+CiAgICAgICAgPHNwYW4+0JPQsNGA0LDQvdGC0LjRjyA1INC70LXRgjwvc3Bhbj4KICAgICAgICA8c3Bhbj7QodC10YDRgtC40YTQuNC60LDRgtGLIENFIC8gSVNPIC8gRVNNQTwvc3Bhbj4KICAgICAgICA8c3Bhbj5GT0Ig0JPRg9Cw0L3Rh9C20L7Rgy/QqNGN0L3RjNGH0LbRjdC90Yw8L3NwYW4+CiAgICAgIDwvZGl2PgogICAgPC9kaXY+CiAgPC9kaXY+Cjwvc2VjdGlvbj4KCgo8c2VjdGlvbiBjbGFzcz0idHJ1c3QtYmFyIj4KICA8ZGl2IGNsYXNzPSJjb250YWluZXIiPgogICAgPGRpdiBjbGFzcz0idHJ1c3QtZ3JpZCI+CiAgICAgIDxkaXYgY2xhc3M9InRydXN0LWl0ZW0iPgogICAgICAgIDxzcGFuIGNsYXNzPSJ0cnVzdC1pY29uIj7wn4+tPC9zcGFuPgogICAgICAgIDxzdHJvbmc+0J3QsNC/0YDRj9C80YPRjiDRgSDQt9Cw0LLQvtC00LA8L3N0cm9uZz4KICAgICAgICA8cD7QmtC+0L3QutGD0YDQtdC90YLQvdGL0LUg0YbQtdC90YssINCx0LXQtyDQv9C+0YHRgNC10LTQvdC40LrQvtCyPC9wPgogICAgICA8L2Rpdj4KICAgICAgPGRpdiBjbGFzcz0idHJ1c3QtaXRlbSI+CiAgICAgICAgPHNwYW4gY2xhc3M9InRydXN0LWljb24iPvCflKc8L3NwYW4+CiAgICAgICAgPHN0cm9uZz5PRU0vT0RNPC9zdHJvbmc+CiAgICAgICAgPHA+0JvQvtCz0L7RgtC40L8sINGD0L/QsNC60L7QstC60LAsINC+0YLQtNC10LvQutCwINC90LAg0LfQsNC60LDQtzwvcD4KICAgICAgPC9kaXY+CiAgICAgIDxkaXYgY2xhc3M9InRydXN0LWl0ZW0iPgogICAgICAgIDxzcGFuIGNsYXNzPSJ0cnVzdC1pY29uIj7inIU8L3NwYW4+CiAgICAgICAgPHN0cm9uZz7QodC10YDRgtC40YTQuNGG0LjRgNC+0LLQsNC90L3QvtC1INC60LDRh9C10YHRgtCy0L48L3N0cm9uZz4KICAgICAgICA8cD5DRSwgSVNPOTAwMSwgU0FCRVIsIEVTTUE8L3A+CiAgICAgIDwvZGl2PgogICAgICA8ZGl2IGNsYXNzPSJ0cnVzdC1pdGVtIj4KICAgICAgICA8c3BhbiBjbGFzcz0idHJ1c3QtaWNvbiI+8J+aojwvc3Bhbj4KICAgICAgICA8c3Ryb25nPtCU0L7RgdGC0LDQstC60LAg0L/QviDQstGB0LXQvNGDINC80LjRgNGDPC9zdHJvbmc+CiAgICAgICAgPHA+0KHRgNC+0Log0L/QvtGB0YLQsNCy0LrQuCAxNS0zMCDQtNC90LXQuTwvcD4KICAgICAgPC9kaXY+CiAgICA8L2Rpdj4KICA8L2Rpdj4KPC9zZWN0aW9uPgoKCjxzZWN0aW9uIGNsYXNzPSJjYXRlZ29yaWVzLXNlY3Rpb24iPgogIDxkaXYgY2xhc3M9ImNvbnRhaW5lciI+CiAgICA8aDIgY2xhc3M9InNlY3Rpb24tdGl0bGUiPtCa0LDRgtC10LPQvtGA0LjQuCDQv9GA0L7QtNGD0LrRhtC40Lg8L2gyPgogICAgPHAgY2xhc3M9InNlY3Rpb24tZGVzYyI+0J/RgNC+0YTQtdGB0YHQuNC+0L3QsNC70YzQvdCw0Y8g0YHQsNC90YLQtdGF0L3QuNC60LAg0LTQu9GPINC+0L/RgtC+0LLQvtC5INGC0L7RgNCz0L7QstC70Lgg0Lgg0L/RgNC+0LXQutGC0L3Ri9GFINC30LDQutGD0L/QvtC6PC9wPgoKICAgIDxkaXYgY2xhc3M9ImNhdGVnb3J5LWdyaWQiPgogICAgICAKICAgICAgPGEgaHJlZj0iL3J1L3Byb2R1Y3RzL3NoYXR0YWYvIiBjbGFzcz0iY2F0ZWdvcnktY2FyZCI+CiAgICAgICAgPHNwYW4gY2xhc3M9ImNhdGVnb3J5LWljb24iPvCfmr88L3NwYW4+CiAgICAgICAgPGgzPkJpZGV0IFNwcmF5ZXJzICZhbXA7IFNoYXR0YWY8L2gzPgogICAgICAgIDxwPlByZW1pdW0gYnJhc3MgYW5kIDMwNCBzdGFpbmxlc3Mgc3RlZWwgYmlkZXQgc3ByYXllcnMgZm9yIE1pZGRsZSBFYXN0IG1hcmtldDwvcD4KICAgICAgICA8c3BhbiBjbGFzcz0iY2F0ZWdvcnktbGluayI+0KHQvNC+0YLRgNC10YLRjCDQv9GA0L7QtNGD0LrRhtC40Y4g4oaSPC9zcGFuPgogICAgICA8L2E+CiAgICAgIAogICAgICA8YSBocmVmPSIvcnUvcHJvZHVjdHMvYmF0aHJvb20tYWNjZXNzb3JpZXMvIiBjbGFzcz0iY2F0ZWdvcnktY2FyZCI+CiAgICAgICAgPHNwYW4gY2xhc3M9ImNhdGVnb3J5LWljb24iPvCfm4E8L3NwYW4+CiAgICAgICAgPGgzPkJhdGhyb29tIEFjY2Vzc29yaWVzPC9oMz4KICAgICAgICA8cD4zMDQgc3RhaW5sZXNzIHN0ZWVsIGJhdGhyb29tIGhhcmR3YXJlIHNldHMgYW5kIGFjY2Vzc29yaWVzPC9wPgogICAgICAgIDxzcGFuIGNsYXNzPSJjYXRlZ29yeS1saW5rIj7QodC80L7RgtGA0LXRgtGMINC/0YDQvtC00YPQutGG0LjRjiDihpI8L3NwYW4+CiAgICAgIDwvYT4KICAgICAgCiAgICAgIDxhIGhyZWY9Ii9ydS9wcm9kdWN0cy9raXRjaGVuLWZhdWNldHMvIiBjbGFzcz0iY2F0ZWdvcnktY2FyZCI+CiAgICAgICAgPHNwYW4gY2xhc3M9ImNhdGVnb3J5LWljb24iPvCfmrA8L3NwYW4+CiAgICAgICAgPGgzPktpdGNoZW4gRmF1Y2V0czwvaDM+CiAgICAgICAgPHA+UHVsbC1vdXQgYW5kIG1vZGVybiBraXRjaGVuIGZhdWNldHMgaW4gdmFyaW91cyBmaW5pc2hlczwvcD4KICAgICAgICA8c3BhbiBjbGFzcz0iY2F0ZWdvcnktbGluayI+0KHQvNC+0YLRgNC10YLRjCDQv9GA0L7QtNGD0LrRhtC40Y4g4oaSPC9zcGFuPgogICAgICA8L2E+CiAgICAgIAogICAgICA8YSBocmVmPSIvcnUvcHJvZHVjdHMvc2hvd2VyLXNldHMvIiBjbGFzcz0iY2F0ZWdvcnktY2FyZCI+CiAgICAgICAgPHNwYW4gY2xhc3M9ImNhdGVnb3J5LWljb24iPvCfmr88L3NwYW4+CiAgICAgICAgPGgzPlRoZXJtb3N0YXRpYyBTaG93ZXIgU2V0czwvaDM+CiAgICAgICAgPHA+QW50aS1zY2FsZCB0aGVybW9zdGF0aWMgc2hvd2VyIHN5c3RlbXMgd2l0aCBicmFzcyBjb25zdHJ1Y3Rpb248L3A+CiAgICAgICAgPHNwYW4gY2xhc3M9ImNhdGVnb3J5LWxpbmsiPtCh0LzQvtGC0YDQtdGC0Ywg0L/RgNC+0LTRg9C60YbQuNGOIOKGkjwvc3Bhbj4KICAgICAgPC9hPgogICAgICAKICAgICAgPGEgaHJlZj0iL3J1L3Byb2R1Y3RzL2xlZC1taXJyb3JzLyIgY2xhc3M9ImNhdGVnb3J5LWNhcmQiPgogICAgICAgIDxzcGFuIGNsYXNzPSJjYXRlZ29yeS1pY29uIj7wn6qePC9zcGFuPgogICAgICAgIDxoMz5MRUQgU21hcnQgTWlycm9yczwvaDM+CiAgICAgICAgPHA+QW50aS1mb2cgTEVEIGJhdGhyb29tIG1pcnJvcnMgd2l0aCB0b3VjaCBjb250cm9sPC9wPgogICAgICAgIDxzcGFuIGNsYXNzPSJjYXRlZ29yeS1saW5rIj7QodC80L7RgtGA0LXRgtGMINC/0YDQvtC00YPQutGG0LjRjiDihpI8L3NwYW4+CiAgICAgIDwvYT4KICAgICAgCiAgICAgIDxhIGhyZWY9Ii9ydS9wcm9kdWN0cy93YWxsLXBhbmVscy8iIGNsYXNzPSJjYXRlZ29yeS1jYXJkIj4KICAgICAgICA8c3BhbiBjbGFzcz0iY2F0ZWdvcnktaWNvbiI+8J+nsTwvc3Bhbj4KICAgICAgICA8aDM+UFUgU3RvbmUgV2FsbCBQYW5lbHM8L2gzPgogICAgICAgIDxwPkxpZ2h0d2VpZ2h0IHBvbHl1cmV0aGFuZSBkZWNvcmF0aXZlIHdhbGwgcGFuZWxzPC9wPgogICAgICAgIDxzcGFuIGNsYXNzPSJjYXRlZ29yeS1saW5rIj7QodC80L7RgtGA0LXRgtGMINC/0YDQvtC00YPQutGG0LjRjiDihpI8L3NwYW4+CiAgICAgIDwvYT4KICAgICAgCiAgICA8L2Rpdj4KICA8L2Rpdj4KPC9zZWN0aW9uPgoKCjxzZWN0aW9uIGNsYXNzPSJ3aHktdXMiPgogIDxkaXYgY2xhc3M9ImNvbnRhaW5lciI+CiAgICA8aDIgY2xhc3M9InNlY3Rpb24tdGl0bGUiPtCf0L7Rh9C10LzRgyDQstGL0LHQuNGA0LDRjtGCIEJ1bnlhbiBIb21lPC9oMj4KICAgIDxkaXYgY2xhc3M9ImZlYXR1cmVzLWdyaWQiPgogICAgICA8ZGl2IGNsYXNzPSJmZWF0dXJlIj4KICAgICAgICA8aDM+8J+UqSDQotC+0LvRjNC60L4g0L/RgNC10LzQuNCw0LvRjNC90YvQtSDQvNCw0YLQtdGA0LjQsNC70Ys8L2gzPgogICAgICAgIDxwPtCc0LDRgdGB0LjQstC90LDRjyDQu9Cw0YLRg9C90YwgQ1c2MTdOINC4INC90LXRgNC20LDQstC10Y7RidCw0Y8g0YHRgtCw0LvRjCBTVVMzMDQuINCR0LXQtyBBQlMsINCx0LXQtyDRhtC40L3QutC+0LLRi9GFINGB0L/Qu9Cw0LLQvtCyLiDQodC+0LfQtNCw0L3QviDQvdCwINC00L7Qu9Cz0LjQtSDQs9C+0LTRiy48L3A+CiAgICAgIDwvZGl2PgogICAgICA8ZGl2IGNsYXNzPSJmZWF0dXJlIj4KICAgICAgICA8aDM+8J+OqCDQoNCw0LfQu9C40YfQvdGL0LUg0L7RgtC00LXQu9C60Lg8L2gzPgogICAgICAgIDxwPtCl0YDQvtC8LCDQvNCw0YLQvtCy0YvQuSDQvdC40LrQtdC70YwsINC80LDRgtC+0LLRi9C5INGH0ZHRgNC90YvQuSwg0LzQsNGC0L7QstC+0LUg0LfQvtC70L7RgtC+LCDRgdC10YDRi9C5LiDQlNC+0YHRgtGD0L/QvdCwINC40L3QtNC40LLQuNC00YPQsNC70YzQvdCw0Y8gUFZELdC+0YLQtNC10LvQutCwLjwvcD4KICAgICAgPC9kaXY+CiAgICAgIDxkaXYgY2xhc3M9ImZlYXR1cmUiPgogICAgICAgIDxoMz7wn5OmINCY0L3QtNC40LLQuNC00YPQsNC70YzQvdCw0Y8g0YPQv9Cw0LrQvtCy0LrQsDwvaDM+CiAgICAgICAgPHA+0JrQvtGA0L7QsdC60Lgg0YEg0LvQvtCz0L7RgtC40L/QvtC8IE9FTSwg0LjQvdC00LjQstC40LTRg9Cw0LvRjNC90YvQtSDRjdGC0LjQutC10YLQutC4LCDQv9C10YfQsNGC0Ywg0YjRgtGA0LjRhS3QutC+0LTQvtCyLiDQk9C+0YLQvtCy0L4g0LTQu9GPINCy0LjRgtGA0LjQvS48L3A+CiAgICAgIDwvZGl2PgogICAgICA8ZGl2IGNsYXNzPSJmZWF0dXJlIj4KICAgICAgICA8aDM+8J+SsCDQptC10L3RiyDQv9C+INC+0LHRitGR0LzRgzwvaDM+CiAgICAgICAgPHA+0KHQutC40LTQutC4INC+0YIgNTAg0YjRgi4g0JvRg9GH0YjQuNC1INGG0LXQvdGLINC00LvRjyDQutC+0L3RgtC10LnQvdC10YDQvdGL0YUg0LfQsNC60LDQt9C+0LIuPC9wPgogICAgICA8L2Rpdj4KICAgIDwvZGl2PgogIDwvZGl2Pgo8L3NlY3Rpb24+CgoKPHNlY3Rpb24gY2xhc3M9ImN0YS1zZWN0aW9uIj4KICA8ZGl2IGNsYXNzPSJjb250YWluZXIiPgogICAgPGgyPtCT0L7RgtC+0LLRiyDQvtGE0L7RgNC80LjRgtGMINC30LDQutCw0Lc/PC9oMj4KICAgIDxwPtCe0YLQv9GA0LDQstGM0YLQtSDQvdCw0Lwg0LLQsNGI0Lgg0YLRgNC10LHQvtCy0LDQvdC40Y8g0Lgg0L/QvtC70YPRh9C40YLQtSDQutC+0L3QutGD0YDQtdC90YLQvdC+0LUg0L/RgNC10LTQu9C+0LbQtdC90LjQtSDQsiDRgtC10YfQtdC90LjQtSAyNCDRh9Cw0YHQvtCyLjwvcD4KICAgIDxkaXYgY2xhc3M9ImN0YS1hY3Rpb25zIj4KICAgICAgPGEgaHJlZj0iL3J1L2NvbnRhY3QvIiBjbGFzcz0iYnRuIGJ0bi1wcmltYXJ5IGJ0bi1sZyI+0J7RgtC/0YDQsNCy0LjRgtGMINC30LDQv9GA0L7RgTwvYT4KICAgICAgPGEgaHJlZj0iaHR0cHM6Ly93YS5tZS9tZXNzYWdlL0VGSU5WQ0RUQ09SNkkxIiBjbGFzcz0iYnRuIGJ0bi13aGF0c2FwcCBidG4tbGciIHRhcmdldD0iX2JsYW5rIj7wn5KsIFdoYXRzQXBwPC9hPgogICAgPC9kaXY+CiAgPC9kaXY+Cjwvc2VjdGlvbj4KCgo8L21haW4+Cjxmb290ZXIgY2xhc3M9InNpdGUtZm9vdGVyIj4KICA8ZGl2IGNsYXNzPSJjb250YWluZXIiPgogICAgPGRpdiBjbGFzcz0iZm9vdGVyLWdyaWQiPgogICAgICA8ZGl2IGNsYXNzPSJmb290ZXItY29sIj4KICAgICAgICA8aDQ+QlVOWUFOIEhPTUU8L2g0PgogICAgICAgIDxwPtCS0LDRiCDQvdCw0LTRkdC20L3Ri9C5IEIyQi3Qv9Cw0YDRgtC90ZHRgCDQv9C+INGB0LDQvdGC0LXRhdC90LjQutC1INC00LvRjyDQstCw0L3QvdC+0Lkg0Lgg0LTQvtC80LAuINCd0LDQv9GA0Y/QvNGD0Y4g0YEg0LfQsNCy0L7QtNCwLCBPRU0vT0RNINC/0YDQuNCy0LXRgtGB0YLQstGD0Y7RgtGB0Y8uPC9wPgogICAgICAgIDxkaXYgY2xhc3M9ImNlcnQtYmFkZ2VzIj4KICAgICAgICAgIAogICAgICAgICAgPHNwYW4gY2xhc3M9ImNlcnQtYmFkZ2UiPkNFPC9zcGFuPgogICAgICAgICAgCiAgICAgICAgICA8c3BhbiBjbGFzcz0iY2VydC1iYWRnZSI+SVNPOTAwMTwvc3Bhbj4KICAgICAgICAgIAogICAgICAgICAgPHNwYW4gY2xhc3M9ImNlcnQtYmFkZ2UiPlNBQkVSPC9zcGFuPgogICAgICAgICAgCiAgICAgICAgICA8c3BhbiBjbGFzcz0iY2VydC1iYWRnZSI+RVNNQTwvc3Bhbj4KICAgICAgICAgIAogICAgICAgIDwvZGl2PgogICAgICA8L2Rpdj4KCiAgICAgIDxkaXYgY2xhc3M9ImZvb3Rlci1jb2wiPgogICAgICAgIDxoND7Qn9GA0L7QtNGD0LrRhtC40Y88L2g0PgogICAgICAgIDx1bD4KICAgICAgICAgIDxsaT48YSBocmVmPSIvcnUvcHJvZHVjdHMvc2hhdHRhZi8iPtCR0LjQtNC1LdC00YPRiNC4INC4INCo0LDRgtGC0LDRhDwvYT48L2xpPgogICAgICAgICAgPGxpPjxhIGhyZWY9Ii9ydS9wcm9kdWN0cy9iYXRocm9vbS1hY2Nlc3Nvcmllcy8iPtCQ0LrRgdC10YHRgdGD0LDRgNGLINC00LvRjyDQstCw0L3QvdC+0Lk8L2E+PC9saT4KICAgICAgICAgIDxsaT48YSBocmVmPSIvcnUvcHJvZHVjdHMva2l0Y2hlbi1mYXVjZXRzLyI+0JrRg9GF0L7QvdC90YvQtSDRgdC80LXRgdC40YLQtdC70Lg8L2E+PC9saT4KICAgICAgICAgIDxsaT48YSBocmVmPSIvcnUvcHJvZHVjdHMvc2hvd2VyLXNldHMvIj7QlNGD0YjQtdCy0YvQtSDQvdCw0LHQvtGA0Ys8L2E+PC9saT4KICAgICAgICAgIDxsaT48YSBocmVmPSIvcnUvcHJvZHVjdHMvbGVkLW1pcnJvcnMvIj7Qo9C80L3Ri9C1INC30LXRgNC60LDQu9CwINGBIExFRDwvYT48L2xpPgogICAgICAgICAgPGxpPjxhIGhyZWY9Ii9ydS9wcm9kdWN0cy93YWxsLXBhbmVscy8iPtCd0LDRgdGC0LXQvdC90YvQtSDQv9Cw0L3QtdC70Lg8L2E+PC9saT4KICAgICAgICA8L3VsPgogICAgICA8L2Rpdj4KCiAgICAgIDxkaXYgY2xhc3M9ImZvb3Rlci1jb2wiPgogICAgICAgIDxoND7QmtC+0LzQv9Cw0L3QuNGPPC9oND4KICAgICAgICA8dWw+CiAgICAgICAgICA8bGk+PGEgaHJlZj0iL3J1L2Fib3V0LyI+0J4g0L3QsNGBPC9hPjwvbGk+CiAgICAgICAgICA8bGk+PGEgaHJlZj0iL3J1L29lbS1vZG0vIj5PRU0vT0RNPC9hPjwvbGk+CiAgICAgICAgICA8bGk+PGEgaHJlZj0iL3J1L2NvbnRhY3QvIj7QmtC+0L3RgtCw0LrRgtGLPC9hPjwvbGk+CiAgICAgICAgPC91bD4KICAgICAgPC9kaXY+CgogICAgICA8ZGl2IGNsYXNzPSJmb290ZXItY29sIj4KICAgICAgICA8aDQ+Q29udGFjdDwvaDQ+CiAgICAgICAgPHA+8J+TpyA8YSBocmVmPSJtYWlsdG86aW5mb0BidW55YW5ob21lLmNvbSIgY2xhc3M9InRvcC1iYXItaXRlbSI+RS1tYWlsOiBpbmZvQGJ1bnlhbmhvbWUuY29tPC9hPjwvcD4KICAgICAgICA8cD7wn5OxIFdoYXRzQXBwOiArODYxODY3NjkzMjc3NzwvcD4KICAgICAgICA8cD7wn5ONIEd1YW5nemhvdSwgR3Vhbmdkb25nLCBDaGluYTwvcD4KICAgICAgICA8YSBocmVmPSJodHRwczovL3dhLm1lL21lc3NhZ2UvRUZJTlZDRFRDT1I2STEiIGNsYXNzPSJidG4gYnRuLXdoYXRzYXBwIiB0YXJnZXQ9Il9ibGFuayI+8J+SrCDQp9Cw0YIg0LIgV2hhdHNBcHA8L2E+CiAgICAgIDwvZGl2PgogICAgPC9kaXY+CgogICAgPGRpdiBjbGFzcz0iZm9vdGVyLWJvdHRvbSI+CiAgICAgIDxwPiZjb3B5OyAyMDI2IEJ1bnlhbiBIb21lLiBBbGwgcmlnaHRzIHJlc2VydmVkLjwvcD4KICAgICAgPHA+Rk9CINCT0YPQsNC90YfQttC+0YMv0KjRjdC90YzRh9C20Y3QvdGMIHwgVC9UIDMwJSDQv9GA0LXQtNC+0L/Qu9Cw0YLQsCB8INCh0YDQvtC6IDE1LTMwINC00L3QtdC5PC9wPgogICAgPC9kaXY+CiAgPC9kaXY+CjwvZm9vdGVyPgoKPHNjcmlwdCBkYXRhLWNmYXN5bmM9ImZhbHNlIiBzcmM9Ii9jZG4tY2dpL3NjcmlwdHMvNWM1ZGQ3MjgvY2xvdWRmbGFyZS1zdGF0aWMvZW1haWwtZGVjb2RlLm1pbi5qcyI+PC9zY3JpcHQ+PHNjcmlwdCBzcmM9Ii9qcy9tYWluLmpzIj48L3NjcmlwdD4KPC9ib2R5Pgo8L2h0bWw+Cg==
+<!DOCTYPE html>
+<html lang="ru" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bunyan Home</title>
+  <meta name="description" content="Premium bathroom and kitchen hardware manufacturer. OEM/ODM services. Factory direct pricing for distributors, contractors, and project buyers.">
+  
+  <link rel="alternate" hreflang="x-default" href="https://bunyanhome.com/ru/">
+  <link rel="alternate" hreflang="en" href="https://bunyanhome.com/"><link rel="alternate" hreflang="ar" href="https://bunyanhome.com/ar/"><link rel="alternate" hreflang="de" href="https://bunyanhome.com/de/"><link rel="alternate" hreflang="fr" href="https://bunyanhome.com/fr/"><link rel="alternate" hreflang="es" href="https://bunyanhome.com/es/"><link rel="alternate" hreflang="pt" href="https://bunyanhome.com/pt/"><link rel="alternate" hreflang="tr" href="https://bunyanhome.com/tr/"><link rel="alternate" hreflang="it" href="https://bunyanhome.com/it/"><link rel="alternate" hreflang="zh" href="https://bunyanhome.com/zh/">
+  
+  <link rel="stylesheet" href="/css/style.css?v=20260703">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="lang-ru ">
+<header class="site-header">
+  
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-inner">
+        <a href="mailto:info@bunyanhome.com" class="top-bar-item">E-mail: info@bunyanhome.com</a>
+        <a href="tel:+8618676932777" class="top-bar-item center-item">Tel: +8618676932777</a>
+        <div class="top-bar-flags">
+          
+          
+          <a href="/en/" title="English" class="">
+            <img src="https://flagcdn.com/16x12/gb.png" width="16" height="12" alt="English" loading="lazy" />
+          </a>
+          
+          
+          <a href="/ar/" title="العربية" class="">
+            <img src="https://flagcdn.com/16x12/sa.png" width="16" height="12" alt="العربية" loading="lazy" />
+          </a>
+          
+          
+          <a href="/de/" title="Deutsch" class="">
+            <img src="https://flagcdn.com/16x12/de.png" width="16" height="12" alt="Deutsch" loading="lazy" />
+          </a>
+          
+          
+          <a href="/fr/" title="Français" class="">
+            <img src="https://flagcdn.com/16x12/fr.png" width="16" height="12" alt="Français" loading="lazy" />
+          </a>
+          
+          
+          <a href="/es/" title="Español" class="">
+            <img src="https://flagcdn.com/16x12/es.png" width="16" height="12" alt="Español" loading="lazy" />
+          </a>
+          
+          
+          <a href="/ru/" title="Русский" class="active">
+            <img src="https://flagcdn.com/16x12/ru.png" width="16" height="12" alt="Русский" loading="lazy" />
+          </a>
+          
+          
+          <a href="/pt/" title="Português" class="">
+            <img src="https://flagcdn.com/16x12/br.png" width="16" height="12" alt="Português" loading="lazy" />
+          </a>
+          
+          
+          <a href="/tr/" title="Türkçe" class="">
+            <img src="https://flagcdn.com/16x12/tr.png" width="16" height="12" alt="Türkçe" loading="lazy" />
+          </a>
+          
+          
+          <a href="/it/" title="Italiano" class="">
+            <img src="https://flagcdn.com/16x12/it.png" width="16" height="12" alt="Italiano" loading="lazy" />
+          </a>
+          
+          
+          <a href="/zh/" title="中文" class="">
+            <img src="https://flagcdn.com/16x12/cn.png" width="16" height="12" alt="中文" loading="lazy" />
+          </a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="container">
+    <div class="header-inner">
+      <a href="/ru/" class="logo">
+        <span class="logo-bunyan">BUNYAN</span><span class="logo-dot">·</span><span class="logo-home">HOME</span>
+      </a>
+
+      <nav class="main-nav">
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+          
+          <a href="/" class="nav-link">
+            Home
+            
+          </a>
+        
+          <span class="nav-separator"></span>
+          <a href="/products/" class="nav-link">
+            Products
+            <span class="nav-arrow">▼</span>
+          </a>
+        
+          <span class="nav-separator"></span>
+          <a href="/oem-odm/" class="nav-link">
+            OEM/ODM
+            
+          </a>
+        
+          <span class="nav-separator"></span>
+          <a href="/about/" class="nav-link">
+            About Us
+            
+          </a>
+        
+          <span class="nav-separator"></span>
+          <a href="/contact/" class="nav-link">
+            Contact
+            
+          </a>
+        
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-switcher" id="langSwitcher">
+  <button class="lang-toggle" id="langToggle" aria-label="Switch language" onclick="toggleLangDropdown()">
+    <img src="https://flagcdn.com/16x12/ru.png" width="16" height="12" alt="Русский" class="lang-flag-img" />
+    <span class="lang-name">Русский</span>
+    <svg class="lang-chevron" width="12" height="12" viewBox="0 0 12 12"><path d="M3 5l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+  </button>
+  <div class="lang-dropdown" id="langDropdown">
+    
+    
+    <div class="lang-dropdown-cols">
+      <div class="lang-dropdown-col">
+        
+        <a href="/en/" class="lang-item ">
+          <img src="https://flagcdn.com/16x12/gb.png" width="16" height="12" alt="English" class="lang-flag-img" />
+          <span class="lang-name">English</span>
+        </a>
+        
+        <a href="/ar/" class="lang-item ">
+          <img src="https://flagcdn.com/16x12/sa.png" width="16" height="12" alt="العربية" class="lang-flag-img" />
+          <span class="lang-name">العربية</span>
+        </a>
+        
+        <a href="/de/" class="lang-item ">
+          <img src="https://flagcdn.com/16x12/de.png" width="16" height="12" alt="Deutsch" class="lang-flag-img" />
+          <span class="lang-name">Deutsch</span>
+        </a>
+        
+        <a href="/fr/" class="lang-item ">
+          <img src="https://flagcdn.com/16x12/fr.png" width="16" height="12" alt="Français" class="lang-flag-img" />
+          <span class="lang-name">Français</span>
+        </a>
+        
+        <a href="/es/" class="lang-item ">
+          <img src="https://flagcdn.com/16x12/es.png" width="16" height="12" alt="Español" class="lang-flag-img" />
+          <span class="lang-name">Español</span>
+        </a>
+        
+      </div>
+      <div class="lang-dropdown-col">
+        
+        <a href="/ru/" class="lang-item active">
+          <img src="https://flagcdn.com/16x12/ru.png" width="16" height="12" alt="Русский" class="lang-flag-img" />
+          <span class="lang-name">Русский</span>
+        </a>
+        
+        <a href="/pt/" class="lang-item ">
+          <img src="https://flagcdn.com/16x12/br.png" width="16" height="12" alt="Português" class="lang-flag-img" />
+          <span class="lang-name">Português</span>
+        </a>
+        
+        <a href="/tr/" class="lang-item ">
+          <img src="https://flagcdn.com/16x12/tr.png" width="16" height="12" alt="Türkçe" class="lang-flag-img" />
+          <span class="lang-name">Türkçe</span>
+        </a>
+        
+        <a href="/it/" class="lang-item ">
+          <img src="https://flagcdn.com/16x12/it.png" width="16" height="12" alt="Italiano" class="lang-flag-img" />
+          <span class="lang-name">Italiano</span>
+        </a>
+        
+        <a href="/zh/" class="lang-item ">
+          <img src="https://flagcdn.com/16x12/cn.png" width="16" height="12" alt="中文" class="lang-flag-img" />
+          <span class="lang-name">中文</span>
+        </a>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+        <div class="header-search">
+          <input type="text" class="search-input" placeholder="Search..." id="headerSearch" />
+          <button class="search-btn" aria-label="Search">🔍</button>
+        </div>
+      </div>
+
+      <button class="mobile-menu-toggle" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+function toggleLangDropdown() {
+  var s = document.getElementById('langSwitcher');
+  s.classList.toggle('open');
+}
+document.addEventListener('click', function(e) {
+  var s = document.getElementById('langSwitcher');
+  if (s && !s.contains(e.target)) {
+    s.classList.remove('open');
+  }
+});
+</script>
+<main>
+
+
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <h1>Сантехника для ванной и дома напрямую с завода</h1>
+      <p class="hero-subtitle">Премиальная продукция из латуни и нержавеющей стали 304 для дистрибьюторов, подрядчиков и закупщиков проектов. OEM/ODM приветствуются.</p>
+      <div class="hero-actions">
+        <a href="/ru/products/" class="btn btn-primary btn-lg">Смотреть продукцию</a>
+        <a href="/ru/contact/" class="btn btn-outline btn-lg">Получить предложение</a>
+      </div>
+      <div class="hero-badges">
+        <span>MOQ от 50 шт.</span>
+        <span>Гарантия 5 лет</span>
+        <span>Сертификаты CE / ISO / ESMA</span>
+        <span>FOB Гуанчжоу/Шэньчжэнь</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="trust-bar">
+  <div class="container">
+    <div class="trust-grid">
+      <div class="trust-item">
+        <span class="trust-icon">🏭</span>
+        <strong>Напрямую с завода</strong>
+        <p>Конкурентные цены, без посредников</p>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">🔧</span>
+        <strong>OEM/ODM</strong>
+        <p>Логотип, упаковка, отделка на заказ</p>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">✅</span>
+        <strong>Сертифицированное качество</strong>
+        <p>CE, ISO9001, SABER, ESMA</p>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">🚢</span>
+        <strong>Доставка по всему миру</strong>
+        <p>Срок поставки 15-30 дней</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="categories-section">
+  <div class="container">
+    <h2 class="section-title">Категории продукции</h2>
+    <p class="section-desc">Профессиональная сантехника для оптовой торговли и проектных закупок</p>
+
+    <div class="category-grid">
+      
+      <a href="/ru/products/shattaf/" class="category-card">
+        <span class="category-icon">🚿</span>
+        <h3>Bidet Sprayers &amp; Shattaf</h3>
+        <p>Premium brass and 304 stainless steel bidet sprayers for Middle East market</p>
+        <span class="category-link">Смотреть продукцию →</span>
+      </a>
+      
+      <a href="/ru/products/bathroom-accessories/" class="category-card">
+        <span class="category-icon">🛁</span>
+        <h3>Bathroom Accessories</h3>
+        <p>304 stainless steel bathroom hardware sets and accessories</p>
+        <span class="category-link">Смотреть продукцию →</span>
+      </a>
+      
+      <a href="/ru/products/kitchen-faucets/" class="category-card">
+        <span class="category-icon">🚰</span>
+        <h3>Kitchen Faucets</h3>
+        <p>Pull-out and modern kitchen faucets in various finishes</p>
+        <span class="category-link">Смотреть продукцию →</span>
+      </a>
+      
+      <a href="/ru/products/shower-sets/" class="category-card">
+        <span class="category-icon">🚿</span>
+        <h3>Thermostatic Shower Sets</h3>
+        <p>Anti-scald thermostatic shower systems with brass construction</p>
+        <span class="category-link">Смотреть продукцию →</span>
+      </a>
+      
+      <a href="/ru/products/led-mirrors/" class="category-card">
+        <span class="category-icon">🪞</span>
+        <h3>LED Smart Mirrors</h3>
+        <p>Anti-fog LED bathroom mirrors with touch control</p>
+        <span class="category-link">Смотреть продукцию →</span>
+      </a>
+      
+      <a href="/ru/products/wall-panels/" class="category-card">
+        <span class="category-icon">🧱</span>
+        <h3>PU Stone Wall Panels</h3>
+        <p>Lightweight polyurethane decorative wall panels</p>
+        <span class="category-link">Смотреть продукцию →</span>
+      </a>
+      
+    </div>
+  </div>
+</section>
+
+
+<section class="why-us">
+  <div class="container">
+    <h2 class="section-title">Почему выбирают Bunyan Home</h2>
+    <div class="features-grid">
+      <div class="feature">
+        <h3>🔩 Только премиальные материалы</h3>
+        <p>Массивная латунь CW617N и нержавеющая сталь SUS304. Без ABS, без цинковых сплавов. Создано на долгие годы.</p>
+      </div>
+      <div class="feature">
+        <h3>🎨 Различные отделки</h3>
+        <p>Хром, матовый никель, матовый чёрный, матовое золото, серый. Доступна индивидуальная PVD-отделка.</p>
+      </div>
+      <div class="feature">
+        <h3>📦 Индивидуальная упаковка</h3>
+        <p>Коробки с логотипом OEM, индивидуальные этикетки, печать штрих-кодов. Готово для витрин.</p>
+      </div>
+      <div class="feature">
+        <h3>💰 Цены по объёму</h3>
+        <p>Скидки от 50 шт. Лучшие цены для контейнерных заказов.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="cta-section">
+  <div class="container">
+    <h2>Готовы оформить заказ?</h2>
+    <p>Отправьте нам ваши требования и получите конкурентное предложение в течение 24 часов.</p>
+    <div class="cta-actions">
+      <a href="/ru/contact/" class="btn btn-primary btn-lg">Отправить запрос</a>
+      <a href="https://wa.me/message/EFINVCDTCOR6I1" class="btn btn-whatsapp btn-lg" target="_blank">💬 WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>BUNYAN HOME</h4>
+        <p>Ваш надёжный B2B-партнёр по сантехнике для ванной и дома. Напрямую с завода, OEM/ODM приветствуются.</p>
+        <div class="cert-badges">
+          
+          <span class="cert-badge">CE</span>
+          
+          <span class="cert-badge">ISO9001</span>
+          
+          <span class="cert-badge">SABER</span>
+          
+          <span class="cert-badge">ESMA</span>
+          
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Продукция</h4>
+        <ul>
+          <li><a href="/ru/products/shattaf/">Биде-души и Шаттаф</a></li>
+          <li><a href="/ru/products/bathroom-accessories/">Аксессуары для ванной</a></li>
+          <li><a href="/ru/products/kitchen-faucets/">Кухонные смесители</a></li>
+          <li><a href="/ru/products/shower-sets/">Душевые наборы</a></li>
+          <li><a href="/ru/products/led-mirrors/">Умные зеркала с LED</a></li>
+          <li><a href="/ru/products/wall-panels/">Настенные панели</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Компания</h4>
+        <ul>
+          <li><a href="/ru/about/">О нас</a></li>
+          <li><a href="/ru/oem-odm/">OEM/ODM</a></li>
+          <li><a href="/ru/contact/">Контакты</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>📧 <a href="mailto:info@bunyanhome.com" class="top-bar-item">E-mail: info@bunyanhome.com</a></p>
+        <p>📱 WhatsApp: +8618676932777</p>
+        <p>📍 Guangzhou, Guangdong, China</p>
+        <a href="https://wa.me/message/EFINVCDTCOR6I1" class="btn btn-whatsapp" target="_blank">💬 Чат в WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Bunyan Home. All rights reserved.</p>
+      <p>FOB Гуанчжоу/Шэньчжэнь | T/T 30% предоплата | Срок 15-30 дней</p>
+    </div>
+  </div>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/js/main.js"></script>
+</body>
+</html>

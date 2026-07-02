@@ -1,1 +1,40 @@
-Ly8gTGFuZ3VhZ2Ugc3dpdGNoZXIgdG9nZ2xlCmRvY3VtZW50LmFkZEV2ZW50TGlzdGVuZXIoJ0RPTUNvbnRlbnRMb2FkZWQnLCBmdW5jdGlvbigpIHsKICBjb25zdCBsYW5nVG9nZ2xlID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcignLmxhbmctdG9nZ2xlJyk7CiAgY29uc3QgbGFuZ0Ryb3Bkb3duID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcignLmxhbmctZHJvcGRvd24nKTsKCiAgaWYgKGxhbmdUb2dnbGUgJiYgbGFuZ0Ryb3Bkb3duKSB7CiAgICBsYW5nVG9nZ2xlLmFkZEV2ZW50TGlzdGVuZXIoJ2NsaWNrJywgZnVuY3Rpb24oZSkgewogICAgICBlLnN0b3BQcm9wYWdhdGlvbigpOwogICAgICBsYW5nRHJvcGRvd24uY2xhc3NMaXN0LnRvZ2dsZSgnYWN0aXZlJyk7CiAgICB9KTsKICAgIGRvY3VtZW50LmFkZEV2ZW50TGlzdGVuZXIoJ2NsaWNrJywgZnVuY3Rpb24oKSB7CiAgICAgIGxhbmdEcm9wZG93bi5jbGFzc0xpc3QucmVtb3ZlKCdhY3RpdmUnKTsKICAgIH0pOwogIH0KCiAgLy8gTW9iaWxlIG1lbnUgdG9nZ2xlCiAgY29uc3QgbW9iaWxlVG9nZ2xlID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcignLm1vYmlsZS1tZW51LXRvZ2dsZScpOwogIGNvbnN0IG1haW5OYXYgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKCcubWFpbi1uYXYnKTsKICBpZiAobW9iaWxlVG9nZ2xlICYmIG1haW5OYXYpIHsKICAgIG1vYmlsZVRvZ2dsZS5hZGRFdmVudExpc3RlbmVyKCdjbGljaycsIGZ1bmN0aW9uKCkgewogICAgICBtYWluTmF2LmNsYXNzTGlzdC50b2dnbGUoJ21vYmlsZS1vcGVuJyk7CiAgICB9KTsKICB9CgogIC8vIEhlYWRlciBzZWFyY2gKICBjb25zdCBzZWFyY2hJbnB1dCA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdoZWFkZXJTZWFyY2gnKTsKICBjb25zdCBzZWFyY2hCdG4gPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKCcuc2VhcmNoLWJ0bicpOwogIGlmIChzZWFyY2hJbnB1dCAmJiBzZWFyY2hCdG4pIHsKICAgIGZ1bmN0aW9uIGRvU2VhcmNoKCkgewogICAgICB2YXIgcSA9IHNlYXJjaElucHV0LnZhbHVlLnRyaW0oKTsKICAgICAgaWYgKHEpIHsKICAgICAgICB3aW5kb3cubG9jYXRpb24uaHJlZiA9ICcvc2VhcmNoLz9xPScgKyBlbmNvZGVVUklDb21wb25lbnQocSk7CiAgICAgIH0KICAgIH0KICAgIHNlYXJjaEJ0bi5hZGRFdmVudExpc3RlbmVyKCdjbGljaycsIGRvU2VhcmNoKTsKICAgIHNlYXJjaElucHV0LmFkZEV2ZW50TGlzdGVuZXIoJ2tleXByZXNzJywgZnVuY3Rpb24oZSkgewogICAgICBpZiAoZS5rZXkgPT09ICdFbnRlcicpIGRvU2VhcmNoKCk7CiAgICB9KTsKICB9Cn0pOwo=
+// Language switcher toggle
+document.addEventListener('DOMContentLoaded', function() {
+  const langToggle = document.querySelector('.lang-toggle');
+  const langDropdown = document.querySelector('.lang-dropdown');
+
+  if (langToggle && langDropdown) {
+    langToggle.addEventListener('click', function(e) {
+      e.stopPropagation();
+      langDropdown.classList.toggle('active');
+    });
+    document.addEventListener('click', function() {
+      langDropdown.classList.remove('active');
+    });
+  }
+
+  // Mobile menu toggle
+  const mobileToggle = document.querySelector('.mobile-menu-toggle');
+  const mainNav = document.querySelector('.main-nav');
+  if (mobileToggle && mainNav) {
+    mobileToggle.addEventListener('click', function() {
+      mainNav.classList.toggle('mobile-open');
+    });
+  }
+
+  // Header search
+  const searchInput = document.getElementById('headerSearch');
+  const searchBtn = document.querySelector('.search-btn');
+  if (searchInput && searchBtn) {
+    function doSearch() {
+      var q = searchInput.value.trim();
+      if (q) {
+        window.location.href = '/search/?q=' + encodeURIComponent(q);
+      }
+    }
+    searchBtn.addEventListener('click', doSearch);
+    searchInput.addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') doSearch();
+    });
+  }
+});

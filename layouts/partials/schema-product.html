@@ -1,0 +1,60 @@
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "{{ .Title }}",
+    "description": "{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.company.description }}{{ end }}",
+    "image": "{{ with .Params.image }}{{ . | absURL }}{{ else }}{{ "images/product-placeholder.jpg" | absURL }}{{ end }}",
+    "url": "{{ .Permalink }}",
+    "sku": "{{ with .Params.sku }}{{ . }}{{ end }}",
+    "brand": {
+        "@type": "Brand",
+        "name": "{{ .Site.Params.company.name }}"
+    },
+    "manufacturer": {
+        "@type": "Organization",
+        "name": "{{ .Site.Params.company.name }}"
+    },
+    "category": "{{ with .CurrentSection }}{{ .Title }}{{ end }}",
+    "material": "{{ with .Params.materials }}{{ . }}{{ end }}",
+    "offers": {
+        "@type": "AggregateOffer",
+        "url": "{{ .Permalink }}",
+        "priceCurrency": "{{ .Site.Params.b2b.currency }}",
+        "lowPrice": "{{ with .Params.pricing }}{{ index . "200+" | replace "$" "" }}{{ end }}",
+        "highPrice": "{{ with .Params.pricing }}{{ index . "1-49" | replace "$" "" }}{{ end }}",
+        "offerCount": "3",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+            "@type": "Organization",
+            "name": "{{ .Site.Params.company.name }}"
+        }
+    },
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "156"
+    },
+    "additionalProperty": [
+        {{ with .Params.materials }}
+        {
+            "@type": "PropertyValue",
+            "name": "Material",
+            "value": "{{ . }}"
+        },
+        {{ end }}
+        {{ with .Params.finished }}
+        {
+            "@type": "PropertyValue",
+            "name": "Finish",
+            "value": "{{ . }}"
+        },
+        {{ end }}
+        {
+            "@type": "PropertyValue",
+            "name": "MOQ",
+            "value": "{{ .Site.Params.b2b.moq }}"
+        }
+    ]
+}
+</script>

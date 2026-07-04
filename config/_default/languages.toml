@@ -1,0 +1,61 @@
+[en]
+  languageName = "English"
+  languageCode = "en"
+  contentDir = "content/en"
+  weight = 1
+
+[ar]
+  languageName = "العربية"
+  languageCode = "ar"
+  contentDir = "content/ar"
+  weight = 2
+  [ar.params]
+    direction = "rtl"
+
+[de]
+  languageName = "Deutsch"
+  languageCode = "de"
+  contentDir = "content/de"
+  weight = 3
+
+[fr]
+  languageName = "Français"
+  languageCode = "fr"
+  contentDir = "content/fr"
+  weight = 4
+
+[es]
+  languageName = "Español"
+  languageCode = "es"
+  contentDir = "content/es"
+  weight = 5
+
+[ru]
+  languageName = "Русский"
+  languageCode = "ru"
+  contentDir = "content/ru"
+  weight = 6
+
+[pt]
+  languageName = "Português"
+  languageCode = "pt"
+  contentDir = "content/pt"
+  weight = 7
+
+[tr]
+  languageName = "Türkçe"
+  languageCode = "tr"
+  contentDir = "content/tr"
+  weight = 8
+
+[it]
+  languageName = "Italiano"
+  languageCode = "it"
+  contentDir = "content/it"
+  weight = 9
+
+[zh]
+  languageName = "中文"
+  languageCode = "zh-CN"
+  contentDir = "content/zh"
+  weight = 10

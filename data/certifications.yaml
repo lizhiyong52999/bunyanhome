@@ -1,0 +1,32 @@
+# Product Certifications
+
+certifications:
+  - id: ce
+    name: CE
+    full_name: "Conformité Européenne"
+    description: "European Union safety, health, and environmental protection standards"
+    icon: "ce-badge"
+    
+  - id: iso9001
+    name: ISO9001
+    full_name: "ISO 9001:2015"
+    description: "Quality management systems standard"
+    icon: "iso-badge"
+    
+  - id: saber
+    name: SABER
+    full_name: "SABER Certification"
+    description: "Saudi Product Safety Program"
+    icon: "saber-badge"
+    
+  - id: esma
+    name: ESMA
+    full_name: "Emirates Authority for Standardization & Metrology"
+    description: "UAE national standards and conformity assessment"
+    icon: "esma-badge"
+    
+  - id: sasO
+    name: SASO
+    full_name: "Saudi Standards, Metrology and Quality Organization"
+    description: "Saudi Arabian standards organization"
+    icon: "saso-badge"

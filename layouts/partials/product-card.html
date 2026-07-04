@@ -1,0 +1,44 @@
+<article class="product-card">
+    <a href="{{ .Permalink }}">
+        <div class="card-image">
+            {{ with .Params.image }}
+            <img src="{{ . }}" alt="Product image" loading="lazy">
+            {{ else }}
+            <div class="placeholder-image">
+                <i class="fas fa-image"></i>
+            </div>
+            {{ end }}
+            
+            <!-- Quick View Badge -->
+            <span class="card-badge">{{ i18n "factory_direct" }}</span>
+        </div>
+        
+        <div class="card-content">
+            <h3 class="card-title">{{ .Title }}</h3>
+            
+            {{ with .Description }}
+            <p class="card-description">{{ . }}</p>
+            {{ end }}
+            
+            <!-- Price Range -->
+            {{ with .Params.pricing }}
+            <div class="card-pricing">
+                <span class="price-label">{{ i18n "price_range" }}:</span>
+                <span class="price-value">{{ index . "1-49" }} - {{ index . "200+" }}</span>
+            </div>
+            {{ end }}
+            
+            <!-- Min Order -->
+            {{ with .Params.moq }}
+            <div class="card-moq">
+                <span>{{ i18n "moq" }}: {{ . }}</span>
+            </div>
+            {{ end }}
+            
+            <!-- CTA -->
+            <div class="card-actions">
+                <span class="btn-card">{{ i18n "view_details" }} <i class="fas fa-arrow-right"></i></span>
+            </div>
+        </div>
+    </a>
+</article>

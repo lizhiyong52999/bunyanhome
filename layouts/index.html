@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="{{ .Language.Lang }}" {{ if eq .Language.Lang "ar" }}dir="rtl"{{ end }}>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ .Site.Title }} — {{ .Site.Params.tagline }}</title>
+  <meta name="description" content="{{ .Site.Params.description }}">
+  {{ if .IsTranslated }}
+  <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">
+  {{ range .Translations }}<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">{{ end }}
+  {{ end }}
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800;900&family=Inter:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="lang-{{ .Language.Lang }} {{ if eq .Language.Lang "ar" }}rtl{{ end }}">
+{{ partial "header.html" . }}
+<main>
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <h1>{{ i18n "hero_title" | default "Factory Direct Bathroom & Home Fixtures" }}</h1>
+      <p class="hero-subtitle">{{ i18n "hero_subtitle" | default "Premium brass & 304 stainless steel products for distributors, contractors and project buyers. OEM/ODM welcome." }}</p>
+      <div class="hero-actions">
+        <a href="/{{ .Language.Lang }}/products/" class="btn btn-primary btn-lg">{{ i18n "view_products" | default "View Products" }}</a>
+        <a href="/{{ .Language.Lang }}/contact/" class="btn btn-outline btn-lg">{{ i18n "get_quote" | default "Get a Quote" }}</a>
+      </div>
+      <div class="hero-badges">
+        <span>{{ i18n "badge_moq" | default "MOQ from 50 pcs" }}</span>
+        <span>{{ i18n "badge_warranty" | default "5-Year Warranty" }}</span>
+        <span>{{ i18n "badge_cert" | default "CE / ISO / ESMA Certified" }}</span>
+        <span>{{ i18n "badge_shipping" | default "FOB Guangzhou/Shenzhen" }}</span>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="trust-bar">
+  <div class="container"><div class="trust-grid">
+    <div class="trust-item"><span class="trust-icon">🏭</span><strong>{{ i18n "trust_factory" | default "Factory Direct" }}</strong><p>{{ i18n "trust_factory_desc" | default "Competitive pricing, no middleman" }}</p></div>
+    <div class="trust-item"><span class="trust-icon">🔧</span><strong>OEM/ODM</strong><p>{{ i18n "trust_oem_desc" | default "Custom logo, packaging, finish" }}</p></div>
+    <div class="trust-item"><span class="trust-icon">✅</span><strong>{{ i18n "trust_cert" | default "Certified Quality" }}</strong><p>{{ i18n "trust_cert_desc" | default "CE, ISO9001, SABER, ESMA" }}</p></div>
+    <div class="trust-item"><span class="trust-icon">🚢</span><strong>{{ i18n "trust_shipping" | default "Global Shipping" }}</strong><p>{{ i18n "trust_shipping_desc" | default "15-30 days lead time" }}</p></div>
+  </div></div>
+</section>
+<section class="categories-section">
+  <div class="container">
+    <h2 class="section-title">{{ i18n "our_products" | default "Our Products" }}</h2>
+    <p class="section-desc">{{ i18n "products_desc" | default "Professional bathroom & home fixtures for wholesale and project procurement" }}</p>
+    <div class="category-grid">
+      {{ range .Site.Data.categories.categories }}
+      <a href="/{{ $.Language.Lang }}/products/{{ .id }}/" class="category-card">
+        <span class="category-icon">{{ .icon }}</span><h3>{{ .name }}</h3><p>{{ .description }}</p>
+        <span class="category-link">{{ i18n "view_category" | default "View Products" }} →</span>
+      </a>
+      {{ end }}
+    </div>
+  </div>
+</section>
+<section class="why-us">
+  <div class="container">
+    <h2 class="section-title">{{ i18n "why_choose_us" | default "Why Choose Bunyan Home" }}</h2>
+    <div class="features-grid">
+      <div class="feature"><h3>🔩 {{ i18n "feat_material" | default "Premium Materials Only" }}</h3><p>{{ i18n "feat_material_desc" | default "Solid brass CW617N and SUS304 stainless steel. No ABS, no zinc alloy. Built to last." }}</p></div>
+      <div class="feature"><h3>🎨 {{ i18n "feat_finish" | default "Multiple Finishes" }}</h3><p>{{ i18n "feat_finish_desc" | default "Chrome, Brushed Nickel, Matte Black, Brushed Gold, Gun Grey. Custom PVD available." }}</p></div>
+      <div class="feature"><h3>📦 {{ i18n "feat_packing" | default "Custom Packaging" }}</h3><p>{{ i18n "feat_packing_desc" | default "OEM branded boxes, custom labels, barcode printing. Ready for retail shelf." }}</p></div>
+      <div class="feature"><h3>💰 {{ i18n "feat_pricing" | default "Tiered Pricing" }}</h3><p>{{ i18n "feat_pricing_desc" | default "Volume discounts from 50 pcs. Better prices for container orders." }}</p></div>
+    </div>
+  </div>
+</section>
+<section class="cta-section">
+  <div class="container">
+    <h2>{{ i18n "cta_title" | default "Ready to Start Your Order?" }}</h2>
+    <p>{{ i18n "cta_desc" | default "Send us your requirements and get a competitive quote within 24 hours." }}</p>
+    <div class="cta-actions">
+      <a href="/{{ .Language.Lang }}/contact/" class="btn btn-primary btn-lg">{{ i18n "send_inquiry" | default "Send Inquiry" }}</a>
+      <a href="{{ .Site.Params.whatsapp_link }}" class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener">💬 WhatsApp</a>
+    </div>
+  </div>
+</section>
+</main>
+{{ partial "footer.html" . }}
+<script src="/js/main.js"></script>
+</body>
+</html>

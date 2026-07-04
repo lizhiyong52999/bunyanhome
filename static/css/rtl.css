@@ -1,0 +1,194 @@
+/* RTL Support for Arabic */
+[dir="rtl"] {
+    direction: rtl;
+    text-align: right;
+}
+
+/* Navigation RTL */
+[dir="rtl"] .nav-wrapper {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .nav-menu {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .nav-actions {
+    flex-direction: row-reverse;
+}
+
+/* Language Switcher RTL */
+[dir="rtl"] .lang-dropdown {
+    right: auto;
+    left: 0;
+}
+
+[dir="rtl"] .lang-toggle {
+    flex-direction: row-reverse;
+}
+
+/* Breadcrumb RTL */
+[dir="rtl"] .breadcrumb-list {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .breadcrumb-item {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .breadcrumb-item i {
+    transform: rotate(180deg);
+}
+
+/* Product Grid RTL */
+[dir="rtl"] .products-grid,
+[dir="rtl"] .categories-grid,
+[dir="rtl"] .features-grid {
+    direction: rtl;
+}
+
+/* Product Card RTL */
+[dir="rtl"] .card-badge {
+    left: auto;
+    right: 0.75rem;
+}
+
+[dir="rtl"] .btn-card i {
+    transform: rotate(180deg);
+}
+
+[dir="rtl"] .product-card:hover .btn-card i {
+    transform: rotate(180deg) translateX(4px);
+}
+
+/* View All Link RTL */
+[dir="rtl"] .view-all-link i {
+    transform: rotate(180deg);
+}
+
+[dir="rtl"] .view-all-link:hover i {
+    transform: rotate(180deg) translateX(4px);
+}
+
+/* Footer RTL */
+[dir="rtl"] .footer-grid {
+    direction: rtl;
+}
+
+[dir="rtl"] .footer-contact li {
+    flex-direction: row-reverse;
+}
+
+/* Form RTL */
+[dir="rtl"] .form-group input,
+[dir="rtl"] .form-group select,
+[dir="rtl"] .form-group textarea {
+    text-align: right;
+}
+
+/* Pricing Table RTL */
+[dir="rtl"] .pricing-table th,
+[dir="rtl"] .pricing-table td {
+    text-align: right;
+}
+
+/* Specs Table RTL */
+[dir="rtl"] .specs-table th,
+[dir="rtl"] .specs-table td {
+    text-align: right;
+}
+
+/* Features List RTL */
+[dir="rtl"] .features-list li {
+    flex-direction: row-reverse;
+}
+
+/* WhatsApp Button RTL */
+[dir="rtl"] .whatsapp-float {
+    right: auto;
+    left: 24px;
+}
+
+[dir="rtl"] .whatsapp-float .whatsapp-tooltip {
+    right: auto;
+    left: 70px;
+}
+
+[dir="rtl"] .whatsapp-float .whatsapp-tooltip::after {
+    right: auto;
+    left: -6px;
+    border-left-color: transparent;
+    border-right-color: #333;
+}
+
+/* Hero CTA RTL */
+[dir="rtl"] .hero-cta {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .cta-buttons {
+    flex-direction: row-reverse;
+}
+
+/* Section Header RTL */
+[dir="rtl"] .section-header {
+    direction: rtl;
+}
+
+/* About Grid RTL */
+[dir="rtl"] .about-grid {
+    direction: rtl;
+}
+
+/* Stat Items RTL */
+[dir="rtl"] .stat-item {
+    direction: rtr;
+}
+
+/* Category CTA RTL */
+[dir="rtl"] .cta-box {
+    direction: rtl;
+}
+
+/* Tabs RTL */
+[dir="rtl"] .tabs {
+    flex-direction: row-reverse;
+}
+
+/* Product Header RTL */
+[dir="rtl"] .product-header-grid {
+    direction: rtl;
+}
+
+[dir="rtl"] .quick-specs .spec-item {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .product-actions {
+    flex-direction: row-reverse;
+}
+
+/* Inquiry Form RTL */
+[dir="rtl"] .inquiry-form .form-actions {
+    flex-direction: row-reverse;
+}
+
+/* Footer Bottom RTL */
+[dir="rtl"] .footer-bottom {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .footer-bottom-links {
+    flex-direction: row-reverse;
+}
+
+/* Spec Item RTL */
+[dir="rtl"] .spec-label {
+    text-align: left;
+}
+
+/* Fonts for Arabic */
+[lang="ar"],
+[lang="ar-SA"] {
+    font-family: 'Noto Sans Arabic', 'Inter', sans-serif;
+}

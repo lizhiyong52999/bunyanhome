@@ -10,6 +10,7 @@
   {{ range .Translations }}<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">{{ end }}
   {{ end }}
   <link rel="stylesheet" href="/css/style.css?v={{ now.Unix }}">
+  {{ partial "head-additions.html" . }}
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -20,5 +21,6 @@
 </main>
 {{ partial "footer.html" . }}
 <script src="/js/main.js"></script>
+{{ partial "scripts-additions.html" . }}
 </body>
 </html>

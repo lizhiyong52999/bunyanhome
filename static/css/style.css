@@ -378,6 +378,10 @@ a:hover { color: var(--color-accent); }
 .cert-badges { display: flex; gap: 8px; margin-top: 12px; }
 .cert-badge { padding: 4px 8px; border: 1px solid #555; border-radius: 4px; font-size: 0.75rem; color: #aaa; }
 .footer-bottom { border-top: 1px solid #333; padding-top: 24px; text-align: center; font-size: 0.8rem; color: #888; }
+.footer-legal-links { margin-top: 12px; }
+.footer-legal-links a { color: #7eb8da; text-decoration: none; transition: color 0.2s; }
+.footer-legal-links a:hover { color: #a8d4ea; text-decoration: underline; }
+.footer-sep { margin: 0 8px; color: #555; }
 
 /* ===== Responsive ===== */
 @media (max-width: 768px) {

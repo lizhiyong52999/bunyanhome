@@ -60,6 +60,14 @@
     <textarea id="message" name="message" rows="4" required placeholder="{{ i18n "form_requirements_placeholder" | default "Please describe your requirements: finish, packaging, customization, etc." }}"></textarea>
   </div>
 
+
+  <div class="form-group full-width consent-group">
+    <label class="consent-label">
+      <input type="checkbox" id="privacy-consent" required>
+      I have read and agree to the <a href="/en/privacy-policy/" target="_blank">Privacy Policy</a>. I consent to Bunyan Home collecting and processing my personal data for the purpose of responding to this inquiry. *
+    </label>
+  </div>
+
   <button type="submit" class="btn btn-primary btn-lg" id="submit-btn">
     {{ i18n "form_submit" | default "Send Inquiry" }}
   </button>
